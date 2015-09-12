@@ -11,17 +11,17 @@ clang version >= 3.3
 # Build Instructions
 
 ## Unix-like systems.
-1. Enter the build directory
+- Enter the build directory
 
 ```bash
 cd build
 ```
-2. Configure the Makefile with CMake
+- Configure the Makefile with CMake
 
 ```bash
 cmake ..
 ```
-3. Compile Room Move
+- Compile Room Move
 
 ```bash
 make
