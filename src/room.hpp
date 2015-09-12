@@ -6,27 +6,16 @@
 #include <memory>
 #include <unordered_map>
 #include "mob.hpp"
+#include "exit.hpp"
+
+void hello() {
+	std::cout << "Hello, world!" << '\n';
+}
 
 namespace RoomMove {
-
-//! Hash function for Exit class Enums.
-struct ExitHash
-{
-    template <typename T>
-    std::size_t operator()(T t) const
-    {
-        return static_cast<std::size_t>(t);
-    }
-};
-
-//! Possible directions to exit a room.
-enum class Exit {
-	NORTH, SOUTH, EAST, WEST, UP, DOWN, NORTHWEST, NORTHEAST, SOUTHWEST, SOUTHEAST
-};
-
 // Mobs are stored as shared_ptrs because unique_ptrs makes removal impossible.
 using MobVec = std::vector<std::shared_ptr<Mob>>;
-using ExitMap = std::unordered_map<Exit, std::weak_ptr<Mob>, ExitHash>;
+using ExitMap = std::unordered_map<Exit, std::weak_ptr<Room>, ExitHash>;
 
 class Room {
 	MobVec mobs;
@@ -43,7 +32,9 @@ public:
 	void remove_mob(const std::shared_ptr<Mob>& mob);
 	std::vector<std::shared_ptr<Mob>>::size_type num_mobs() const;
 	// Basic movement and picking things up.
-	void parse(const std::string command);
+	void parse(const std::string& command);
+	ExitMap::const_iterator find(const Exit& exit) const;
+	ExitMap::const_iterator end() const;
 };
 }
 

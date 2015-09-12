@@ -1,6 +1,8 @@
 #include <iostream>
 #include <memory>
 #include <algorithm>
+#include <iterator>
+#include "exit.hpp"
 #include "room.hpp"
 
 void RoomMove::Room::add_mob(const std::shared_ptr<Mob>& mob)
@@ -20,4 +22,14 @@ void RoomMove::Room::remove_mob(const std::shared_ptr<Mob>& mob)
 RoomMove::MobVec::size_type RoomMove::Room::num_mobs() const
 {
 	return mobs.size();
+}
+
+RoomMove::ExitMap::const_iterator RoomMove::Room::find(const Exit& exit) const
+{
+	return exits.find(exit);
+}
+
+RoomMove::ExitMap::const_iterator RoomMove::Room::end() const
+{
+	return exits.end();
 }

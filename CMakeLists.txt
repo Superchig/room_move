@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.3.1)
-project(ClassTest)
+project(RoomMove)
 
 enable_testing()
 
 set(SPEC_FILES spec/spec.cpp
-			   spec/room_mob_interaction.cpp)
+			   spec/room_mob_interaction_spec.cpp)
 
 add_executable(suite ${SPEC_FILES}
 					 src/room.cpp
