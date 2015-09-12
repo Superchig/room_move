@@ -26,3 +26,8 @@ cmake ..
 ```bash
 make
 ```
+
+# Todo
+
+1. Write specification for mob movement.
+2. Write parser for movement.
