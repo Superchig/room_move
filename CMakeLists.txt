@@ -8,7 +8,8 @@ set(SPEC_FILES spec/spec.cpp
 
 add_executable(suite ${SPEC_FILES}
 					 src/room.cpp
-					 src/mob.cpp)
+					 src/mob.cpp
+					 src/reverse_exit.cpp)
 
 add_executable(room_move src/room_move.cpp)
 

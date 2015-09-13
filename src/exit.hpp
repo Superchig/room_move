@@ -17,6 +17,7 @@ struct ExitHash {
 enum class Exit {
 	NORTH, SOUTH, EAST, WEST, UP, DOWN, NORTHWEST, NORTHEAST, SOUTHWEST, SOUTHEAST,
 		};
-}
 
+Exit reverse_exit(Exit exit);
+}
 #endif // EXIT_HPP_

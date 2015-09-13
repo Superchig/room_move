@@ -1,0 +1,2159 @@
+
+spec/catch.hpp,146438
+#define TWOBLUECUBES_SINGLE_INCLUDE_CATCH_HPP_INCLUDED12,489
+#define TWOBLUECUBES_CATCH_HPP_INCLUDED14,545
+#define TWOBLUECUBES_CATCH_SUPPRESS_WARNINGS_H_INCLUDED24,751
+#  define CATCH_IMPL49,1769
+#    define CLARA_CONFIG_MAIN_NOT_DEFINED54,1844
+#    define CLARA_CONFIG_MAIN55,1886
+#define TWOBLUECUBES_CATCH_NOTIMPLEMENTED_EXCEPTION_H_INCLUDED60,1994
+#define TWOBLUECUBES_CATCH_COMMON_H_INCLUDED63,2092
+#define INTERNAL_CATCH_UNIQUE_NAME_LINE2(65,2138
+#define INTERNAL_CATCH_UNIQUE_NAME_LINE(66,2204
+#define INTERNAL_CATCH_UNIQUE_NAME(67,2305
+#define INTERNAL_CATCH_STRINGIFY2(69,2399
+#define INTERNAL_CATCH_STRINGIFY(70,2447
+#define TWOBLUECUBES_CATCH_COMPILER_CAPABILITIES_HPP_INCLUDED77,2634
+#    define CATCH_INTERNAL_CONFIG_CPP11_NULLPTR102,3652
+#    define CATCH_INTERNAL_CONFIG_CPP11_NOEXCEPT106,3744
+#   define CATCH_INTERNAL_CONFIG_CPP11_NULLPTR134,4436
+#   define CATCH_INTERNAL_CONFIG_CPP11_NULLPTR144,4646
+#define CATCH_INTERNAL_CONFIG_CPP11_NOEXCEPT148,4747
+#define CATCH_INTERNAL_CONFIG_CPP11_GENERATED_METHODS149,4792
+#define CATCH_INTERNAL_CONFIG_VARIADIC_MACROS160,5184
+#  define CATCH_CPP11_OR_GREATER170,5414
+#    define CATCH_INTERNAL_CONFIG_CPP11_NULLPTR173,5500
+#    define CATCH_INTERNAL_CONFIG_CPP11_NOEXCEPT177,5605
+#    define CATCH_INTERNAL_CONFIG_CPP11_GENERATED_METHODS181,5720
+#    define CATCH_INTERNAL_CONFIG_CPP11_IS_ENUM185,5834
+#    define CATCH_INTERNAL_CONFIG_CPP11_TUPLE189,5936
+#    define CATCH_INTERNAL_CONFIG_VARIADIC_MACROS193,6040
+#   define CATCH_CONFIG_CPP11_NULLPTR200,6385
+#   define CATCH_CONFIG_CPP11_NOEXCEPT203,6600
+#   define CATCH_CONFIG_CPP11_GENERATED_METHODS206,6843
+#   define CATCH_CONFIG_CPP11_IS_ENUM209,7065
+#   define CATCH_CONFIG_CPP11_TUPLE212,7271
+#define CATCH_CONFIG_VARIADIC_MACROS215,7452
+#  define CATCH_NOEXCEPT 220,7587
+#  define CATCH_NOEXCEPT_IS(221,7621
+#  define CATCH_NOEXCEPT 223,7670
+#  define CATCH_NOEXCEPT_IS(224,7703
+namespace Catch 227,7742
+    class NonCopyable Catch::NonCopyable229,7761
+        NonCopyable(Catch::NonCopyable::NonCopyable241,8222
+    class SafeBool Catch::SafeBool245,8287
+        typedef void (SafeBool::*type)Catch::SafeBool::type247,8320
+        static type makeSafe(Catch::SafeBool::makeSafe249,8369
+        void trueValue(Catch::SafeBool::trueValue253,8490
+    inline void deleteAll(Catch::deleteAll257,8566
+    inline void deleteAllValues(Catch::deleteAllValues264,8865
+    struct pluralise Catch::pluralise279,9624
+        std::size_t m_count;Catch::pluralise::m_count284,9807
+        std::string m_label;Catch::pluralise::m_label285,9836
+    struct SourceLineInfo Catch::SourceLineInfo288,9873
+        std::string file;Catch::SourceLineInfo::file302,10474
+        std::size_t line;Catch::SourceLineInfo::line303,10500
+    inline bool isTrue(Catch::isTrue309,10709
+    inline bool alwaysTrue(Catch::alwaysTrue310,10763
+    inline bool alwaysFalse(Catch::alwaysFalse311,10809
+    struct StreamEndStop Catch::StreamEndStop319,11085
+        std::string operator+(Catch::StreamEndStop::operator+320,11112
+    T const& operator + Catch::operator +325,11222
+#define CATCH_INTERNAL_LINEINFO 330,11313
+#define CATCH_INTERNAL_ERROR(331,11419
+namespace Catch 335,11534
+    class NotImplementedException Catch::NotImplementedException337,11553
+        NotImplementedException(Catch::NotImplementedException::NotImplementedException341,11696
+        virtual ~NotImplementedException(Catch::NotImplementedException::~NotImplementedException343,11766
+        std::string m_what;Catch::NotImplementedException::m_what348,11899
+        SourceLineInfo m_lineInfo;Catch::NotImplementedException::m_lineInfo349,11927
+#define CATCH_NOT_IMPLEMENTED 355,12076
+#define TWOBLUECUBES_CATCH_CONTEXT_H_INCLUDED358,12215
+#define TWOBLUECUBES_CATCH_INTERFACES_GENERATORS_H_INCLUDED361,12311
+namespace Catch 365,12391
+    struct IGeneratorInfo Catch::IGeneratorInfo367,12410
+    struct IGeneratorsForTest Catch::IGeneratorsForTest373,12575
+#define TWOBLUECUBES_CATCH_PTR_HPP_INCLUDED385,12906
+namespace Catch 392,13050
+    class Ptr Catch::Ptr398,13255
+        Ptr(Catch::Ptr::Ptr400,13283
+        Ptr(Catch::Ptr::Ptr401,13313
+        Ptr(Catch::Ptr::Ptr405,13408
+        ~Ptr(Catch::Ptr::~Ptr409,13523
+        void reset(Catch::Ptr::reset413,13603
+        Ptr& operator = Catch::Ptr::operator =418,13714
+        Ptr& operator = Catch::Ptr::operator =423,13837
+        void swap(Catch::Ptr::swap428,13976
+        T* get(Catch::Ptr::get429,14041
+        const T* get(Catch::Ptr::get430,14074
+        T& operator*(Catch::Ptr::operator*431,14118
+        T* operator->(Catch::Ptr::operator->432,14164
+        bool operator !(Catch::Ptr::operator !433,14210
+        operator SafeBool::type(Catch::Ptr::operator SafeBool::type434,14266
+        T* m_p;Catch::Ptr::m_p437,14366
+    struct IShared Catch::IShared440,14390
+    template<typename T Catch::T446,14544
+namespace Catch 472,15001
+    struct IContextCatch::IContext481,15157
+    struct IMutableContext Catch::IMutableContext492,15532
+#define TWOBLUECUBES_CATCH_TEST_REGISTRY_HPP_INCLUDED508,16048
+#define TWOBLUECUBES_CATCH_INTERFACES_TESTCASE_H_INCLUDED511,16150
+namespace Catch 515,16228
+    struct ITestCase Catch::ITestCase519,16268
+    struct ITestCaseRegistry Catch::ITestCaseRegistry528,16437
+namespace Catch 536,16751
+class MethodTestCase Catch::MethodTestCase539,16791
+    MethodTestCase(Catch::MethodTestCase::MethodTestCase542,16854
+    virtual void invoke(Catch::MethodTestCase::invoke544,16921
+    virtual ~MethodTestCase(Catch::MethodTestCase::~MethodTestCase550,17013
+typedef void(*TestFunction)TestFunction555,17078
+struct NameAndDesc 557,17110
+    NameAndDesc(NameAndDesc::NameAndDesc558,17131
+    const char* name;NameAndDesc::name562,17260
+    const char* description;NameAndDesc::description563,17282
+struct AutoReg 566,17315
+    AutoReg(AutoReg::AutoReg573,17496
+    #define INTERNAL_CATCH_TESTCASE(599,18328
+    #define INTERNAL_CATCH_METHOD_AS_TEST_CASE(605,18830
+    #define INTERNAL_CATCH_TEST_CASE_METHOD(609,19171
+    #define INTERNAL_CATCH_TESTCASE(620,19795
+    #define INTERNAL_CATCH_METHOD_AS_TEST_CASE(626,20303
+    #define INTERNAL_CATCH_TEST_CASE_METHOD(630,20650
+#define TWOBLUECUBES_CATCH_CAPTURE_HPP_INCLUDED642,21252
+#define TWOBLUECUBES_CATCH_RESULT_BUILDER_H_INCLUDED645,21343
+#define TWOBLUECUBES_CATCH_RESULT_TYPE_H_INCLUDED648,21436
+namespace Catch 650,21487
+    struct ResultWas Catch::ResultWas653,21536
+    struct ResultWas { enum OfType Catch::ResultWas::OfType653,21536
+        Unknown Catch::ResultWas::OfType::Unknown654,21573
+        Ok Catch::ResultWas::OfType::Ok655,21595
+        Info Catch::ResultWas::OfType::Info656,21611
+        Warning Catch::ResultWas::OfType::Warning657,21629
+        FailureBit Catch::ResultWas::OfType::FailureBit659,21651
+        FailureBit = 0x10,Catch::ResultWas::OfType::x10659,21651
+        ExpressionFailed Catch::ResultWas::OfType::ExpressionFailed661,21679
+        ExpressionFailed = FailureBit Catch::ResultWas::OfType::FailureBit661,21679
+        ExplicitFailure Catch::ResultWas::OfType::ExplicitFailure662,21722
+        ExplicitFailure = FailureBit Catch::ResultWas::OfType::FailureBit662,21722
+        Exception Catch::ResultWas::OfType::Exception664,21765
+        Exception = 0x100 Catch::ResultWas::OfType::x100664,21765
+        Exception = 0x100 | FailureBit,Catch::ResultWas::OfType::FailureBit664,21765
+        ThrewException Catch::ResultWas::OfType::ThrewException666,21806
+        ThrewException = Exception Catch::ResultWas::OfType::Exception666,21806
+        DidntThrowException Catch::ResultWas::OfType::DidntThrowException667,21846
+        DidntThrowException = Exception Catch::ResultWas::OfType::Exception667,21846
+        FatalErrorCondition Catch::ResultWas::OfType::FatalErrorCondition669,21892
+        FatalErrorCondition = 0x200 Catch::ResultWas::OfType::x200669,21892
+        FatalErrorCondition = 0x200 | FailureBitCatch::ResultWas::OfType::FailureBit669,21892
+    inline bool isOk(Catch::isOk673,21953
+    inline bool isJustInfo(Catch::isJustInfo676,22074
+    struct ResultDisposition Catch::ResultDisposition681,22201
+    struct ResultDisposition { enum Flags Catch::ResultDisposition::Flags681,22201
+        Normal Catch::ResultDisposition::Flags::Normal682,22245
+        Normal = 0x01,Catch::ResultDisposition::Flags::x01682,22245
+        ContinueOnFailure Catch::ResultDisposition::Flags::ContinueOnFailure684,22269
+        ContinueOnFailure = 0x02,Catch::ResultDisposition::Flags::x02684,22269
+        FalseTest Catch::ResultDisposition::Flags::FalseTest685,22352
+        FalseTest = 0x04,Catch::ResultDisposition::Flags::x04685,22352
+        SuppressFail Catch::ResultDisposition::Flags::SuppressFail686,22416
+        SuppressFail = 0x08 Catch::ResultDisposition::Flags::x08686,22416
+    inline ResultDisposition::Flags operator | Catch::operator |689,22513
+    inline bool shouldContinueOnFailure(Catch::shouldContinueOnFailure693,22739
+    inline bool isFalseTest(Catch::isFalseTest694,22861
+    inline bool shouldSuppressFailure(Catch::shouldSuppressFailure695,22975
+#define TWOBLUECUBES_CATCH_ASSERTIONRESULT_H_INCLUDED700,23162
+namespace Catch 704,23236
+    struct AssertionInfoCatch::AssertionInfo706,23255
+        AssertionInfo(Catch::AssertionInfo::AssertionInfo708,23286
+        std::string macroName;Catch::AssertionInfo::macroName714,23561
+        SourceLineInfo lineInfo;Catch::AssertionInfo::lineInfo715,23592
+        std::string capturedExpression;Catch::AssertionInfo::capturedExpression716,23625
+        ResultDisposition::Flags resultDisposition;Catch::AssertionInfo::resultDisposition717,23665
+    struct AssertionResultDataCatch::AssertionResultData720,23725
+        AssertionResultData(Catch::AssertionResultData::AssertionResultData722,23762
+        std::string reconstructedExpression;Catch::AssertionResultData::reconstructedExpression724,23831
+        std::string message;Catch::AssertionResultData::message725,23876
+        ResultWas::OfType resultType;Catch::AssertionResultData::resultType726,23905
+    class AssertionResult Catch::AssertionResult729,23951
+        AssertionInfo m_info;Catch::AssertionResult::m_info755,25002
+        AssertionResultData m_resultData;Catch::AssertionResult::m_resultData756,25032
+namespace Catch 761,25108
+    struct TestFailureException{Catch::TestFailureException763,25127
+    struct CopyableStream Catch::CopyableStream769,25296
+        CopyableStream(Catch::CopyableStream::CopyableStream770,25324
+        CopyableStream(Catch::CopyableStream::CopyableStream771,25352
+        CopyableStream& operator=(Catch::CopyableStream::operator=774,25454
+        std::ostringstream oss;Catch::CopyableStream::oss779,25618
+    class ResultBuilder Catch::ResultBuilder782,25658
+        ResultBuilder& operator << Catch::ResultBuilder::operator <<794,26107
+        AssertionInfo m_assertionInfo;Catch::ResultBuilder::m_assertionInfo821,27227
+        AssertionResultData m_data;Catch::ResultBuilder::m_data822,27266
+        struct ExprComponents Catch::ResultBuilder::ExprComponents823,27302
+            ExprComponents(Catch::ResultBuilder::ExprComponents::ExprComponents824,27334
+            bool testFalse;Catch::ResultBuilder::ExprComponents::testFalse825,27387
+            std::string lhs,Catch::ResultBuilder::ExprComponents::lhs826,27415
+            std::string lhs, rhs,Catch::ResultBuilder::ExprComponents::rhs826,27415
+            std::string lhs, rhs, op;Catch::ResultBuilder::ExprComponents::op826,27415
+        } m_exprComponents;Catch::ResultBuilder::m_exprComponents827,27453
+        CopyableStream m_stream;Catch::ResultBuilder::m_stream828,27481
+        bool m_shouldDebugBreak;Catch::ResultBuilder::m_shouldDebugBreak830,27515
+        bool m_shouldThrow;Catch::ResultBuilder::m_shouldThrow831,27548
+#define TWOBLUECUBES_CATCH_EXPRESSION_LHS_HPP_INCLUDED838,27695
+#define TWOBLUECUBES_CATCH_EVALUATE_HPP_INCLUDED841,27789
+namespace Catch 850,27970
+namespace Internal Catch::Internal851,27988
+    enum Operator Catch::Internal::Operator853,28010
+        IsEqualTo,Catch::Internal::Operator::IsEqualTo854,28030
+        IsNotEqualTo,Catch::Internal::Operator::IsNotEqualTo855,28049
+        IsLessThan,Catch::Internal::Operator::IsLessThan856,28071
+        IsGreaterThan,Catch::Internal::Operator::IsGreaterThan857,28091
+        IsLessThanOrEqualTo,Catch::Internal::Operator::IsLessThanOrEqualTo858,28114
+        IsGreaterThanOrEqualToCatch::Internal::Operator::IsGreaterThanOrEqualTo859,28143
+    template<Operator Op> struct OperatorTraits Catch::Internal::OperatorTraits862,28182
+    template<Operator Op> struct OperatorTraits             { static const char* getName(Catch::Internal::OperatorTraits::getName862,28182
+    template<> struct OperatorTraits<Catch::Internal::OperatorTraits863,28297
+    template<> struct OperatorTraits<IsEqualTo>             { static const char* getName(Catch::Internal::OperatorTraits::getName863,28297
+    template<> struct OperatorTraits<Catch::Internal::OperatorTraits864,28407
+    template<> struct OperatorTraits<IsNotEqualTo>          { static const char* getName(Catch::Internal::OperatorTraits::getName864,28407
+    template<> struct OperatorTraits<Catch::Internal::OperatorTraits865,28517
+    template<> struct OperatorTraits<IsLessThan>            { static const char* getName(Catch::Internal::OperatorTraits::getName865,28517
+    template<> struct OperatorTraits<Catch::Internal::OperatorTraits866,28626
+    template<> struct OperatorTraits<IsGreaterThan>         { static const char* getName(Catch::Internal::OperatorTraits::getName866,28626
+    template<> struct OperatorTraits<Catch::Internal::OperatorTraits867,28735
+    template<> struct OperatorTraits<IsLessThanOrEqualTo>   { static const char* getName(Catch::Internal::OperatorTraits::getName867,28735
+    template<> struct OperatorTraits<Catch::Internal::OperatorTraits868,28845
+    template<> struct OperatorTraits<IsGreaterThanOrEqualTo>{ static const char* getName(Catch::Internal::OperatorTraits::getName868,28845
+    inline T& opCast(Catch::Internal::opCast871,28981
+    inline std::nullptr_t opCast(Catch::Internal::opCast875,29151
+    template<typename T1,Catch::Internal::T1880,29432
+    template<typename T1, typename T2,Catch::Internal::T2880,29432
+    class Evaluator{Catch::Internal::Evaluator881,29484
+    template<typename T1,Catch::Internal::T1883,29508
+    template<typename T1,Catch::Internal::T1889,29720
+    template<typename T1,Catch::Internal::T1895,29935
+    template<typename T1,Catch::Internal::T1901,30147
+    template<typename T1,Catch::Internal::T1907,30362
+    template<typename T1,Catch::Internal::T1913,30587
+    template<Operator Op,Catch::Internal::Op920,30810
+    template<Operator Op, typename T1,Catch::Internal::T1920,30810
+    bool applyEvaluator(Catch::Internal::applyEvaluator921,30862
+    template<Operator Op,Catch::Internal::Op929,31128
+    template<Operator Op, typename T1,Catch::Internal::T1929,31128
+    bool compare(Catch::Internal::compare930,31180
+    template<Operator Op> bool compare(Catch::Internal::compare935,31323
+    template<Operator Op> bool compare(Catch::Internal::compare938,31475
+    template<Operator Op> bool compare(Catch::Internal::compare941,31628
+    template<Operator Op> bool compare(Catch::Internal::compare946,31808
+    template<Operator Op> bool compare(Catch::Internal::compare949,31962
+    template<Operator Op> bool compare(Catch::Internal::compare952,32117
+    template<Operator Op> bool compare(Catch::Internal::compare957,32298
+    template<Operator Op> bool compare(Catch::Internal::compare960,32450
+    template<Operator Op> bool compare(Catch::Internal::compare963,32603
+    template<Operator Op> bool compare(Catch::Internal::compare968,32783
+    template<Operator Op> bool compare(Catch::Internal::compare971,32937
+    template<Operator Op> bool compare(Catch::Internal::compare974,33092
+    template<Operator Op,Catch::Internal::Op979,33301
+    template<Operator Op, typename T> bool compare(Catch::Internal::compare979,33301
+    template<Operator Op,Catch::Internal::Op982,33464
+    template<Operator Op, typename T> bool compare(Catch::Internal::compare982,33464
+    template<Operator Op,Catch::Internal::Op987,33680
+    template<Operator Op, typename T> bool compare(Catch::Internal::compare987,33680
+    template<Operator Op,Catch::Internal::Op990,33842
+    template<Operator Op, typename T> bool compare(Catch::Internal::compare990,33842
+    template<Operator Op,Catch::Internal::Op996,34100
+    template<Operator Op, typename T> bool compare(Catch::Internal::compare996,34100
+    template<Operator Op,Catch::Internal::Op999,34246
+    template<Operator Op, typename T> bool compare(Catch::Internal::compare999,34246
+#define TWOBLUECUBES_CATCH_TOSTRING_H_INCLUDED1012,34571
+#define TWOBLUECUBES_CATCH_OBJC_ARC_HPP_INCLUDED1022,34767
+#define CATCH_ARC_ENABLED 1027,34873
+#define CATCH_ARC_ENABLED 1029,34929
+inline void arcSafeRelease(1036,35074
+inline id performOptionalSelector(1039,35141
+#define CATCH_UNSAFE_UNRETAINED1044,35297
+#define CATCH_ARC_STRONG1045,35329
+inline void arcSafeRelease(1047,35360
+inline id performOptionalSelector(1048,35402
+#define CATCH_UNSAFE_UNRETAINED 1060,35728
+#define CATCH_ARC_STRONG 1061,35780
+namespace Catch 1074,35952
+namespace Detail Catch::Detail1108,37034
+    extern std::string unprintableString;Catch::Detail::unprintableString1110,37054
+    struct BorgType Catch::Detail::BorgType1112,37097
+    struct TrueType Catch::Detail::TrueType1116,37178
+    struct TrueType { char sizer[Catch::Detail::TrueType::sizer1116,37178
+    struct FalseType Catch::Detail::FalseType1117,37218
+    struct FalseType { char sizer[Catch::Detail::FalseType::sizer1117,37218
+    struct IsStreamInsertable Catch::Detail::IsStreamInsertable1125,37443
+        static std::ostream &s;Catch::Detail::IsStreamInsertable::s1126,37475
+        static T  const&t;Catch::Detail::IsStreamInsertable::t1127,37507
+        enum { value Catch::Detail::IsStreamInsertable::value1128,37534
+        enum { value = sizeof(Catch::Detail::IsStreamInsertable::sizeof1128,37534
+        enum { value = sizeof( testStreamable(Catch::Detail::IsStreamInsertable::testStreamable1128,37534
+        enum { value = sizeof( testStreamable(s Catch::Detail::IsStreamInsertable::s1128,37534
+        enum { value = sizeof( testStreamable(s << t)Catch::Detail::IsStreamInsertable::t1128,37534
+        enum { value = sizeof( testStreamable(s << t) ) == sizeof(Catch::Detail::IsStreamInsertable::sizeof1128,37534
+        enum { value = sizeof( testStreamable(s << t) ) == sizeof( TrueType Catch::Detail::IsStreamInsertable::TrueType1128,37534
+    template<typename T,Catch::Detail::T1132,37663
+    struct StringMakerBase Catch::Detail::StringMakerBase1152,38169
+        static std::string convert(Catch::Detail::StringMakerBase::convert1155,38267
+        static std::string convert(Catch::Detail::StringMakerBase::convert1161,38424
+    struct StringMakerBase<Catch::Detail::StringMakerBase1166,38531
+        static std::string convert(Catch::Detail::StringMakerBase::convert1168,38595
+    inline std::string rawMemoryToString(Catch::Detail::rawMemoryToString1178,38863
+struct StringMaker 1185,39039
+struct StringMaker<StringMaker1189,39152
+    static std::string convert(StringMaker::convert1191,39202
+template<typename R,1199,39387
+struct StringMaker<StringMaker1200,39420
+    static std::string convert(StringMaker::convert1201,39449
+namespace Detail 1209,39638
+template<typename T,1221,40013
+std::string toString(1222,40054
+namespace TupleDetail 1229,40229
+      typename Tuple,TupleDetail::Tuple1231,40265
+      std::size_t N TupleDetail::N1232,40287
+      typename Tuple,TupleDetail::Tuple1245,40635
+struct StringMaker<StringMaker1255,40821
+    static std::string convert(StringMaker::convert1257,40865
+namespace Detail 1268,41158
+    std::string makeString(Detail::makeString1270,41202
+std::string toString(1283,41693
+    namespace Detail 1287,41782
+    std::string rangeToString(Detail::rangeToString1289,41842
+namespace Catch 1304,42249
+class ExpressionLhs Catch::ExpressionLhs1309,42415
+    ExpressionLhs(Catch::ExpressionLhs::ExpressionLhs1316,42618
+    ResultBuilder& operator == Catch::ExpressionLhs::operator ==1323,42884
+    ResultBuilder& operator != Catch::ExpressionLhs::operator !=1328,43034
+    ResultBuilder& operator < Catch::ExpressionLhs::operator <1333,43187
+    ResultBuilder& operator > Catch::ExpressionLhs::operator >1338,43337
+    ResultBuilder& operator <= Catch::ExpressionLhs::operator <=1343,43490
+    ResultBuilder& operator >= Catch::ExpressionLhs::operator >=1348,43650
+    ResultBuilder& operator == Catch::ExpressionLhs::operator ==1352,43785
+    ResultBuilder& operator != Catch::ExpressionLhs::operator !=1356,43900
+    void endExpression(Catch::ExpressionLhs::endExpression1360,44018
+private:Catch::ExpressionLhs::private1377,45161
+    ResultBuilder& captureExpression(Catch::ExpressionLhs::captureExpression1379,45221
+    ResultBuilder& m_rb;Catch::ExpressionLhs::m_rb1388,45538
+    T m_lhs;Catch::ExpressionLhs::m_lhs1389,45563
+namespace Catch 1395,45607
+    inline ExpressionLhs<T const&> ResultBuilder::operator <= Catch::ResultBuilder::operator <=1398,45651
+    inline ExpressionLhs<bool> ResultBuilder::operator <= Catch::ResultBuilder::operator <=1402,45801
+#define TWOBLUECUBES_CATCH_MESSAGE_H_INCLUDED1409,45992
+namespace Catch 1413,46058
+    struct MessageInfo Catch::MessageInfo1415,46077
+        std::string macroName;Catch::MessageInfo::macroName1420,46266
+        SourceLineInfo lineInfo;Catch::MessageInfo::lineInfo1421,46297
+        ResultWas::OfType type;Catch::MessageInfo::type1422,46330
+        std::string message;Catch::MessageInfo::message1423,46362
+        unsigned int sequence;Catch::MessageInfo::sequence1424,46391
+        bool operator == Catch::MessageInfo::operator ==1426,46423
+        bool operator < Catch::MessageInfo::operator <1429,46542
+        static unsigned int globalCount;Catch::MessageInfo::globalCount1433,46672
+    struct MessageBuilder Catch::MessageBuilder1436,46721
+        MessageBuilder(Catch::MessageBuilder::MessageBuilder1437,46749
+        MessageBuilder& operator << Catch::MessageBuilder::operator <<1444,46995
+        MessageInfo m_info;Catch::MessageBuilder::m_info1449,47120
+        std::ostringstream m_stream;Catch::MessageBuilder::m_stream1450,47148
+    class ScopedMessage Catch::ScopedMessage1453,47193
+        MessageInfo m_info;Catch::ScopedMessage::m_info1459,47367
+#define TWOBLUECUBES_CATCH_INTERFACES_CAPTURE_H_INCLUDED1465,47475
+namespace Catch 1469,47552
+    struct IResultCapture Catch::IResultCapture1479,47744
+#define TWOBLUECUBES_CATCH_DEBUGGER_H_INCLUDED1500,48584
+#define TWOBLUECUBES_CATCH_PLATFORM_H_INCLUDED1503,48668
+#define CATCH_PLATFORM_MAC1506,48761
+#define CATCH_PLATFORM_IPHONE1508,48837
+#define CATCH_PLATFORM_WINDOWS1510,48950
+namespace Catch{Catch1515,49008
+            #define CATCH_BREAK_INTO_DEBUGGER(1527,49319
+            #define CATCH_BREAK_INTO_DEBUGGER(1533,49591
+    #define CATCH_BREAK_INTO_DEBUGGER(1538,49750
+    #define CATCH_BREAK_INTO_DEBUGGER(1541,49935
+#define CATCH_BREAK_INTO_DEBUGGER(1545,50067
+#define TWOBLUECUBES_CATCH_INTERFACES_RUNNER_H_INCLUDED1549,50177
+namespace Catch 1551,50234
+    struct IRunner Catch::IRunner1554,50273
+#define INTERNAL_CATCH_REACT(1565,50713
+#define INTERNAL_CATCH_TEST(1570,50943
+#define INTERNAL_CATCH_IF(1583,51603
+#define INTERNAL_CATCH_ELSE(1588,51880
+#define INTERNAL_CATCH_NO_THROW(1593,52160
+#define INTERNAL_CATCH_THROWS(1607,52739
+#define INTERNAL_CATCH_THROWS_AS(1624,53485
+    #define INTERNAL_CATCH_MSG(1645,54413
+    #define INTERNAL_CATCH_MSG(1653,54849
+#define INTERNAL_CATCH_INFO(1663,55359
+#define INTERNAL_CHECK_THAT(1667,55651
+#define TWOBLUECUBES_CATCH_SECTION_H_INCLUDED1685,56596
+#define TWOBLUECUBES_CATCH_SECTION_INFO_H_INCLUDED1688,56683
+namespace Catch 1690,56735
+    struct SectionInfo Catch::SectionInfo1692,56754
+        std::string name;Catch::SectionInfo::name1698,56958
+        std::string description;Catch::SectionInfo::description1699,56984
+        SourceLineInfo lineInfo;Catch::SectionInfo::lineInfo1700,57017
+#define TWOBLUECUBES_CATCH_TOTALS_HPP_INCLUDED1706,57120
+namespace Catch 1710,57188
+    struct Counts Catch::Counts1712,57207
+        Counts(Catch::Counts::Counts1713,57227
+        Counts operator - Catch::Counts::operator -1715,57293
+        Counts& operator += Catch::Counts::operator +=1722,57573
+        std::size_t total(Catch::Counts::total1729,57782
+        bool allPassed(Catch::Counts::allPassed1732,57878
+        bool allOk(Catch::Counts::allOk1735,57973
+        std::size_t passed;Catch::Counts::passed1739,58045
+        std::size_t failed;Catch::Counts::failed1740,58073
+        std::size_t failedButOk;Catch::Counts::failedButOk1741,58101
+    struct Totals Catch::Totals1744,58142
+        Totals operator - Catch::Totals::operator -1746,58163
+        Totals delta(Catch::Totals::delta1753,58401
+        Totals& operator += Catch::Totals::operator +=1764,58785
+        Counts assertions;Catch::Totals::assertions1770,58962
+        Counts testCases;Catch::Totals::testCases1771,58989
+#define TWOBLUECUBES_CATCH_TIMER_H_INCLUDED1776,59058
+typedef unsigned long long uint64_t;1779,59133
+namespace Catch 1784,59204
+    class Timer Catch::Timer1786,59223
+        Timer(Catch::Timer::Timer1788,59253
+        uint64_t m_ticks;Catch::Timer::m_ticks1795,59471
+namespace Catch 1802,59546
+    class Section Catch::Section1804,59565
+        SectionInfo m_info;Catch::Section::m_info1813,59793
+        std::string m_name;Catch::Section::m_name1815,59822
+        Counts m_assertions;Catch::Section::m_assertions1816,59850
+        bool m_sectionIncluded;Catch::Section::m_sectionIncluded1817,59879
+        Timer m_timer;Catch::Section::m_timer1818,59911
+    #define INTERNAL_CATCH_SECTION(1824,60004
+    #define INTERNAL_CATCH_SECTION(1827,60204
+#define TWOBLUECUBES_CATCH_GENERATORS_HPP_INCLUDED1832,60461
+namespace Catch 1839,60590
+struct IGenerator Catch::IGenerator1842,60630
+    virtual ~IGenerator(Catch::IGenerator::~IGenerator1843,60650
+class BetweenGenerator 1849,60802
+    BetweenGenerator(BetweenGenerator::BetweenGenerator1851,60858
+    virtual T getValue(BetweenGenerator::getValue1853,60927
+    virtual std::size_t size(BetweenGenerator::size1857,61035
+    T m_from;BetweenGenerator::m_from1863,61149
+    T m_to;BetweenGenerator::m_to1864,61163
+class ValuesGenerator 1868,61200
+    ValuesGenerator(ValuesGenerator::ValuesGenerator1870,61255
+    void add(ValuesGenerator::add1872,61280
+    virtual T getValue(ValuesGenerator::getValue1876,61350
+    virtual std::size_t size(ValuesGenerator::size1880,61441
+    std::vector<T> m_values;ValuesGenerator::m_values1885,61528
+class CompositeGenerator 1889,61582
+    CompositeGenerator(CompositeGenerator::CompositeGenerator1891,61617
+    CompositeGenerator(CompositeGenerator::CompositeGenerator1894,61716
+    CompositeGenerator& setFileInfo(CompositeGenerator::setFileInfo1901,61869
+    ~CompositeGenerator(CompositeGenerator::~CompositeGenerator1906,61991
+    operator T CompositeGenerator::operator T1910,62059
+    void add(CompositeGenerator::add1928,62932
+    CompositeGenerator& then(CompositeGenerator::then1933,63073
+    CompositeGenerator& then(CompositeGenerator::then1938,63185
+    void move(CompositeGenerator::move1947,63391
+    std::vector<const IGenerator<T>*> m_composed;CompositeGenerator::m_composed1953,63624
+    std::string m_fileInfo;CompositeGenerator::m_fileInfo1954,63674
+    size_t m_totalSize;CompositeGenerator::m_totalSize1955,63702
+namespace Generators1958,63730
+    CompositeGenerator<T> between(Generators::between1961,63778
+    CompositeGenerator<T> values(Generators::values1968,63994
+    CompositeGenerator<T> values(Generators::values1978,64315
+    CompositeGenerator<T> values(Generators::values1989,64675
+#define INTERNAL_CATCH_LINESTR2(2006,65137
+#define INTERNAL_CATCH_LINESTR(2007,65183
+#define INTERNAL_CATCH_GENERATE(2009,65255
+#define TWOBLUECUBES_CATCH_INTERFACES_EXCEPTION_H_INCLUDED2012,65425
+#define TWOBLUECUBES_CATCH_INTERFACES_REGISTRY_HUB_H_INCLUDED2016,65554
+namespace Catch 2020,65636
+    struct IRegistryHub Catch::IRegistryHub2029,65839
+    struct IMutableRegistryHub Catch::IMutableRegistryHub2037,66139
+namespace Catch 2052,66626
+    typedef std::string(*exceptionTranslateFunction)Catch::exceptionTranslateFunction2054,66645
+    struct IExceptionTranslator Catch::IExceptionTranslator2056,66702
+    struct IExceptionTranslatorRegistry Catch::IExceptionTranslatorRegistry2061,66836
+    class ExceptionTranslatorRegistrar Catch::ExceptionTranslatorRegistrar2067,67002
+        class ExceptionTranslator Catch::ExceptionTranslatorRegistrar::ExceptionTranslator2069,67072
+            ExceptionTranslator(Catch::ExceptionTranslatorRegistrar::ExceptionTranslator::ExceptionTranslator2072,67155
+            virtual std::string translate(Catch::ExceptionTranslatorRegistrar::ExceptionTranslator::translate2076,67299
+        ExceptionTranslatorRegistrar(Catch::ExceptionTranslatorRegistrar::ExceptionTranslatorRegistrar2091,67663
+#define INTERNAL_CATCH_TRANSLATE_EXCEPTION(2099,67967
+#define TWOBLUECUBES_CATCH_APPROX_HPP_INCLUDED2105,68465
+namespace Catch 2110,68549
+namespace Detail Catch::Detail2111,68567
+    class Approx Catch::Detail::Approx2113,68587
+        explicit Approx Catch::Detail::Approx::Approx2115,68618
+        Approx(Catch::Detail::Approx::Approx2121,68796
+        static Approx custom(Catch::Detail::Approx::custom2127,68963
+        Approx operator()(Catch::Detail::Approx::operator()2131,69039
+        friend bool operator == Catch::Detail::Approx::operator ==2138,69235
+        friend bool operator == Catch::Detail::Approx::operator ==2143,69513
+        friend bool operator != Catch::Detail::Approx::operator !=2147,69635
+        friend bool operator != Catch::Detail::Approx::operator !=2151,69758
+        Approx& epsilon(Catch::Detail::Approx::epsilon2155,69881
+        Approx& scale(Catch::Detail::Approx::scale2160,70001
+        std::string toString(Catch::Detail::Approx::toString2165,70113
+        double m_epsilon;Catch::Detail::Approx::m_epsilon2172,70311
+        double m_scale;Catch::Detail::Approx::m_scale2173,70337
+        double m_value;Catch::Detail::Approx::m_value2174,70361
+inline std::string toString<toString2179,70406
+#define TWOBLUECUBES_CATCH_MATCHERS_HPP_INCLUDED2186,70588
+namespace Catch 2188,70638
+namespace Matchers Catch::Matchers2189,70656
+    namespace Impl Catch::Matchers::Impl2190,70677
+    struct Matcher Catch::Matchers::Impl::Matcher2193,70734
+        typedef ExpressionT ExpressionType;Catch::Matchers::Impl::Matcher::ExpressionType2195,70781
+        virtual ~Matcher(Catch::Matchers::Impl::Matcher::~Matcher2197,70826
+    template<typename DerivedT,Catch::Matchers::Impl::DerivedT2203,71027
+    struct MatcherImpl Catch::Matchers::Impl::MatcherImpl2204,71081
+        virtual Ptr<Matcher<ExpressionT> > clone(Catch::Matchers::Impl::MatcherImpl::clone2206,71130
+    namespace Generic Catch::Matchers::Impl::Generic2211,71311
+        class AllOf Catch::Matchers::Impl::Generic::AllOf2214,71375
+            AllOf(Catch::Matchers::Impl::Generic::AllOf::AllOf2217,71468
+            AllOf(Catch::Matchers::Impl::Generic::AllOf::AllOf2218,71491
+            AllOf& add(Catch::Matchers::Impl::Generic::AllOf::add2220,71568
+            virtual bool match(Catch::Matchers::Impl::Generic::AllOf::match2224,71733
+            virtual std::string toString(Catch::Matchers::Impl::Generic::AllOf::toString2231,72017
+            std::vector<Ptr<Matcher<ExpressionT> > > m_matchers;Catch::Matchers::Impl::Generic::AllOf::m_matchers2244,72448
+        class AnyOf Catch::Matchers::Impl::Generic::AnyOf2248,72564
+            AnyOf(Catch::Matchers::Impl::Generic::AnyOf::AnyOf2251,72657
+            AnyOf(Catch::Matchers::Impl::Generic::AnyOf::AnyOf2252,72680
+            AnyOf& add(Catch::Matchers::Impl::Generic::AnyOf::add2254,72757
+            virtual bool match(Catch::Matchers::Impl::Generic::AnyOf::match2258,72922
+            virtual std::string toString(Catch::Matchers::Impl::Generic::AnyOf::toString2265,73205
+            std::vector<Ptr<Matcher<ExpressionT> > > m_matchers;Catch::Matchers::Impl::Generic::AnyOf::m_matchers2278,73635
+    namespace StdString Catch::Matchers::Impl::StdString2283,73719
+        inline std::string makeString(Catch::Matchers::Impl::StdString::makeString2285,73746
+        inline std::string makeString(Catch::Matchers::Impl::StdString::makeString2286,73826
+        struct Equals Catch::Matchers::Impl::StdString::Equals2288,73937
+            Equals(Catch::Matchers::Impl::StdString::Equals::Equals2289,73996
+            Equals(Catch::Matchers::Impl::StdString::Equals::Equals2290,74058
+            virtual bool match(Catch::Matchers::Impl::StdString::Equals::match2294,74158
+            virtual std::string toString(Catch::Matchers::Impl::StdString::Equals::toString2297,74276
+            std::string m_str;Catch::Matchers::Impl::StdString::Equals::m_str2301,74394
+        struct Contains Catch::Matchers::Impl::StdString::Contains2304,74437
+            Contains(Catch::Matchers::Impl::StdString::Contains::Contains2305,74500
+            Contains(Catch::Matchers::Impl::StdString::Contains::Contains2306,74573
+            virtual bool match(Catch::Matchers::Impl::StdString::Contains::match2310,74685
+            virtual std::string toString(Catch::Matchers::Impl::StdString::Contains::toString2313,74832
+            std::string m_substr;Catch::Matchers::Impl::StdString::Contains::m_substr2317,74955
+        struct StartsWith Catch::Matchers::Impl::StdString::StartsWith2320,75001
+            StartsWith(Catch::Matchers::Impl::StdString::StartsWith::StartsWith2321,75068
+            StartsWith(Catch::Matchers::Impl::StdString::StartsWith::StartsWith2322,75143
+            virtual bool match(Catch::Matchers::Impl::StdString::StartsWith::match2326,75261
+            virtual std::string toString(Catch::Matchers::Impl::StdString::StartsWith::toString2329,75392
+            std::string m_substr;Catch::Matchers::Impl::StdString::StartsWith::m_substr2333,75518
+        struct EndsWith Catch::Matchers::Impl::StdString::EndsWith2336,75564
+            EndsWith(Catch::Matchers::Impl::StdString::EndsWith::EndsWith2337,75627
+            EndsWith(Catch::Matchers::Impl::StdString::EndsWith::EndsWith2338,75700
+            virtual bool match(Catch::Matchers::Impl::StdString::EndsWith::match2342,75812
+            virtual std::string toString(Catch::Matchers::Impl::StdString::EndsWith::toString2345,75971
+            std::string m_substr;Catch::Matchers::Impl::StdString::EndsWith::m_substr2349,76095
+    inline Impl::Generic::AllOf<ExpressionT> AllOf(Catch::Matchers::AllOf2357,76339
+    inline Impl::Generic::AllOf<ExpressionT> AllOf(Catch::Matchers::AllOf2362,76635
+    inline Impl::Generic::AnyOf<ExpressionT> AnyOf(Catch::Matchers::AnyOf2368,77031
+    inline Impl::Generic::AnyOf<ExpressionT> AnyOf(Catch::Matchers::AnyOf2373,77327
+    inline Impl::StdString::Equals      Equals(Catch::Matchers::Equals2379,77689
+    inline Impl::StdString::Equals      Equals(Catch::Matchers::Equals2382,77817
+    inline Impl::StdString::Contains    Contains(Catch::Matchers::Contains2385,77969
+    inline Impl::StdString::Contains    Contains(Catch::Matchers::Contains2388,78107
+    inline Impl::StdString::StartsWith  StartsWith(Catch::Matchers::StartsWith2391,78269
+    inline Impl::StdString::StartsWith  StartsWith(Catch::Matchers::StartsWith2394,78411
+    inline Impl::StdString::EndsWith    EndsWith(Catch::Matchers::EndsWith2397,78577
+    inline Impl::StdString::EndsWith    EndsWith(Catch::Matchers::EndsWith2400,78715
+#define TWOBLUECUBES_CATCH_INTERFACES_TAG_ALIAS_REGISTRY_H_INCLUDED2411,79018
+#define TWOBLUECUBES_CATCH_TAG_ALIAS_H_INCLUDED2414,79124
+namespace Catch 2418,79192
+    struct TagAlias Catch::TagAlias2420,79211
+        TagAlias(Catch::TagAlias::TagAlias2421,79233
+        std::string tag;Catch::TagAlias::tag2423,79337
+        SourceLineInfo lineInfo;Catch::TagAlias::lineInfo2424,79362
+    struct RegistrarForTagAliases Catch::RegistrarForTagAliases2427,79403
+#define CATCH_REGISTER_TAG_ALIAS(2433,79575
+#define TWOBLUECUBES_CATCH_OPTION_HPP_INCLUDED2435,79794
+namespace Catch 2437,79842
+    class Option Catch::Option2441,79910
+        Option(Catch::Option::Option2443,79941
+        Option(Catch::Option::Option2444,79985
+        Option(Catch::Option::Option2447,80084
+        ~Option(Catch::Option::~Option2451,80206
+        Option& operator= Catch::Option::operator=2455,80258
+        Option& operator = Catch::Option::operator =2463,80516
+        void reset(Catch::Option::reset2469,80679
+        T& operator*(Catch::Option::operator*2475,80816
+        T const& operator*(Catch::Option::operator*2476,80866
+        T* operator->(Catch::Option::operator->2477,80928
+        const T* operator->(Catch::Option::operator->2478,80978
+        T valueOr(Catch::Option::valueOr2480,81041
+        bool some(Catch::Option::some2484,81169
+        bool none(Catch::Option::none2485,81229
+        bool operator !(Catch::Option::operator !2487,81290
+        operator SafeBool::type(Catch::Option::operator SafeBool::type2488,81356
+        T* nullableValue;Catch::Option::nullableValue2493,81471
+        char storage[Catch::Option::storage2494,81497
+namespace Catch 2499,81564
+    struct ITagAliasRegistry Catch::ITagAliasRegistry2501,81583
+#define TWOBLUECUBES_CATCH_TEST_CASE_INFO_H_INCLUDED2514,82077
+namespace Catch 2524,82264
+    struct TestCaseInfo Catch::TestCaseInfo2528,82306
+        enum SpecialProperties{Catch::TestCaseInfo::SpecialProperties2529,82332
+            None Catch::TestCaseInfo::SpecialProperties::None2530,82364
+            IsHidden Catch::TestCaseInfo::SpecialProperties::IsHidden2531,82386
+            ShouldFail Catch::TestCaseInfo::SpecialProperties::ShouldFail2532,82417
+            MayFail Catch::TestCaseInfo::SpecialProperties::MayFail2533,82450
+            Throws Catch::TestCaseInfo::SpecialProperties::Throws2534,82480
+        std::string name;Catch::TestCaseInfo::name2550,82983
+        std::string className;Catch::TestCaseInfo::className2551,83009
+        std::string description;Catch::TestCaseInfo::description2552,83040
+        std::set<std::string> tags;Catch::TestCaseInfo::tags2553,83073
+        std::set<std::string> lcaseTags;Catch::TestCaseInfo::lcaseTags2554,83109
+        std::string tagsAsString;Catch::TestCaseInfo::tagsAsString2555,83150
+        SourceLineInfo lineInfo;Catch::TestCaseInfo::lineInfo2556,83184
+        SpecialProperties properties;Catch::TestCaseInfo::properties2557,83217
+    class TestCase Catch::TestCase2560,83263
+        Ptr<ITestCase> test;Catch::TestCase::test2578,83802
+#define TWOBLUECUBES_CATCH_OBJC_HPP_INCLUDED2595,84238
+@protocol OcFixture2608,84678
+namespace Catch 2617,84750
+    class OcMethod Catch::OcMethod2619,84769
+        OcMethod(Catch::OcMethod::OcMethod2622,84834
+        virtual void invoke(Catch::OcMethod::invoke2624,84906
+        virtual ~OcMethod(Catch::OcMethod::~OcMethod2634,85227
+        Class m_cls;Catch::OcMethod::m_cls2636,85259
+        SEL m_sel;Catch::OcMethod::m_sel2637,85280
+    namespace Detail{Catch::Detail2640,85307
+        inline std::string getAnnotation(Catch::Detail::getAnnotation2642,85330
+    inline size_t registerTestMethods(Catch::registerTestMethods2655,85941
+    namespace Matchers Catch::Matchers2686,87355
+        namespace Impl Catch::Matchers::Impl2687,87380
+        namespace NSStringMatchers Catch::Matchers::Impl::NSStringMatchers2688,87405
+            struct StringHolder Catch::Matchers::Impl::NSStringMatchers::StringHolder2691,87483
+                StringHolder(Catch::Matchers::Impl::NSStringMatchers::StringHolder::StringHolder2692,87551
+                StringHolder(Catch::Matchers::Impl::NSStringMatchers::StringHolder::StringHolder2693,87630
+                StringHolder(Catch::Matchers::Impl::NSStringMatchers::StringHolder::StringHolder2694,87726
+                NSString* m_substr;Catch::Matchers::Impl::NSStringMatchers::StringHolder::m_substr2698,87826
+            struct Equals Catch::Matchers::Impl::NSStringMatchers::Equals2701,87878
+                Equals(Catch::Matchers::Impl::NSStringMatchers::Equals::Equals2702,87929
+                virtual bool match(Catch::Matchers::Impl::NSStringMatchers::Equals::match2704,88000
+                virtual std::string toString(Catch::Matchers::Impl::NSStringMatchers::Equals::toString2709,88215
+            struct Contains Catch::Matchers::Impl::NSStringMatchers::Contains2714,88380
+                Contains(Catch::Matchers::Impl::NSStringMatchers::Contains::Contains2715,88435
+                virtual bool match(Catch::Matchers::Impl::NSStringMatchers::Contains::match2717,88508
+                virtual std::string toString(Catch::Matchers::Impl::NSStringMatchers::Contains::toString2722,88744
+            struct StartsWith Catch::Matchers::Impl::NSStringMatchers::StartsWith2727,88911
+                StartsWith(Catch::Matchers::Impl::NSStringMatchers::StartsWith::StartsWith2728,88970
+                virtual bool match(Catch::Matchers::Impl::NSStringMatchers::StartsWith::match2730,89045
+                virtual std::string toString(Catch::Matchers::Impl::NSStringMatchers::StartsWith::toString2735,89272
+            struct EndsWith Catch::Matchers::Impl::NSStringMatchers::EndsWith2739,89434
+                EndsWith(Catch::Matchers::Impl::NSStringMatchers::EndsWith::EndsWith2740,89489
+                virtual bool match(Catch::Matchers::Impl::NSStringMatchers::EndsWith::match2742,89562
+                virtual std::string toString(Catch::Matchers::Impl::NSStringMatchers::EndsWith::toString2747,89820
+            Equals(Catch::Matchers::Equals2756,90096
+            Contains(Catch::Matchers::Contains2759,90236
+            StartsWith(Catch::Matchers::StartsWith2762,90382
+            EndsWith(Catch::Matchers::EndsWith2765,90530
+#define OC_TEST_CASE(2774,90788
+#define TWOBLUECUBES_CATCH_IMPL_HPP_INCLUDED2789,91129
+#define TWOBLUECUBES_CATCH_RUNNER_HPP_INCLUDED2800,91437
+#define TWOBLUECUBES_CATCH_COMMANDLINE_HPP_INCLUDED2803,91535
+#define TWOBLUECUBES_CATCH_CONFIG_HPP_INCLUDED2806,91624
+#define TWOBLUECUBES_CATCH_TEST_SPEC_PARSER_HPP_INCLUDED2809,91718
+#define TWOBLUECUBES_CATCH_TEST_SPEC_HPP_INCLUDED2817,91914
+namespace Catch 2827,92101
+    class TestSpec Catch::TestSpec2829,92120
+        struct Pattern Catch::TestSpec::Pattern2830,92141
+        class NamePattern Catch::TestSpec::NamePattern2834,92300
+            enum WildcardPosition Catch::TestSpec::NamePattern::WildcardPosition2835,92345
+                NoWildcard Catch::TestSpec::NamePattern::WildcardPosition::NoWildcard2836,92381
+                WildcardAtStart Catch::TestSpec::NamePattern::WildcardPosition::WildcardAtStart2837,92413
+                WildcardAtEnd Catch::TestSpec::NamePattern::WildcardPosition::WildcardAtEnd2838,92450
+                WildcardAtBothEnds Catch::TestSpec::NamePattern::WildcardPosition::WildcardAtBothEnds2839,92485
+                WildcardAtBothEnds = WildcardAtStart Catch::TestSpec::NamePattern::WildcardPosition::WildcardAtStart2839,92485
+                WildcardAtBothEnds = WildcardAtStart | WildcardAtEndCatch::TestSpec::NamePattern::WildcardPosition::WildcardAtEnd2839,92485
+            NamePattern(Catch::TestSpec::NamePattern::NamePattern2843,92586
+            virtual bool matches(Catch::TestSpec::NamePattern::matches2854,93136
+            std::string m_name;Catch::TestSpec::NamePattern::m_name2876,93981
+            WildcardPosition m_wildcard;Catch::TestSpec::NamePattern::m_wildcard2877,94013
+        class TagPattern Catch::TestSpec::TagPattern2879,94065
+            TagPattern(Catch::TestSpec::TagPattern::TagPattern2881,94125
+            virtual bool matches(Catch::TestSpec::TagPattern::matches2883,94238
+            std::string m_tag;Catch::TestSpec::TagPattern::m_tag2887,94427
+        class ExcludedPattern Catch::TestSpec::ExcludedPattern2889,94469
+            ExcludedPattern(Catch::TestSpec::ExcludedPattern::ExcludedPattern2891,94534
+            virtual bool matches(Catch::TestSpec::ExcludedPattern::matches2893,94689
+            Ptr<Pattern> m_underlyingPattern;Catch::TestSpec::ExcludedPattern::m_underlyingPattern2895,94831
+        struct Filter Catch::TestSpec::Filter2898,94889
+            std::vector<Ptr<Pattern> > m_patterns;Catch::TestSpec::Filter::m_patterns2899,94913
+            bool matches(Catch::TestSpec::Filter::matches2901,94965
+        bool hasFilters(Catch::TestSpec::hasFilters2911,95412
+        bool matches(Catch::TestSpec::matches2914,95495
+        std::vector<Filter> m_filters;Catch::TestSpec::m_filters2923,95863
+namespace Catch 2933,96004
+    class TestSpecParser Catch::TestSpecParser2935,96023
+        enum Mode{Catch::TestSpecParser::Mode2936,96050
+        enum Mode{ None,Catch::TestSpecParser::Mode::None2936,96050
+        enum Mode{ None, Name,Catch::TestSpecParser::Mode::Name2936,96050
+        enum Mode{ None, Name, QuotedName,Catch::TestSpecParser::Mode::QuotedName2936,96050
+        enum Mode{ None, Name, QuotedName, Tag Catch::TestSpecParser::Mode::Tag2936,96050
+        Mode m_mode;Catch::TestSpecParser::m_mode2937,96100
+        bool m_exclusion;Catch::TestSpecParser::m_exclusion2938,96121
+        std::size_t m_start,Catch::TestSpecParser::m_start2939,96147
+        std::size_t m_start, m_pos;Catch::TestSpecParser::m_pos2939,96147
+        std::string m_arg;Catch::TestSpecParser::m_arg2940,96183
+        TestSpec::Filter m_currentFilter;Catch::TestSpecParser::m_currentFilter2941,96210
+        TestSpec m_testSpec;Catch::TestSpecParser::m_testSpec2942,96252
+        ITagAliasRegistry const* m_tagAliases;Catch::TestSpecParser::m_tagAliases2943,96281
+        TestSpecParser(Catch::TestSpecParser::TestSpecParser2946,96341
+        TestSpecParser& parse(Catch::TestSpecParser::parse2948,96437
+        TestSpec testSpec(Catch::TestSpecParser::testSpec2959,96877
+        void visitChar(Catch::TestSpecParser::visitChar2964,96986
+        void startNewMode(Catch::TestSpecParser::startNewMode2992,98098
+        std::string subString(Catch::TestSpecParser::subString2996,98224
+        void addPattern(Catch::TestSpecParser::addPattern2998,98344
+        void addFilter(Catch::TestSpecParser::addFilter3013,98917
+    inline TestSpec parseTestSpec(Catch::parseTestSpec3020,99152
+#define TWOBLUECUBES_CATCH_INTERFACES_CONFIG_H_INCLUDED3031,99425
+namespace Catch 3037,99539
+    struct Verbosity Catch::Verbosity3039,99558
+    struct Verbosity { enum Level Catch::Verbosity::Level3039,99558
+        NoOutput Catch::Verbosity::Level::NoOutput3040,99594
+        Quiet,Catch::Verbosity::Level::Quiet3041,99616
+        NormalCatch::Verbosity::Level::Normal3042,99631
+    struct WarnAbout Catch::WarnAbout3045,99657
+    struct WarnAbout { enum What Catch::WarnAbout::What3045,99657
+        Nothing Catch::WarnAbout::What::Nothing3046,99692
+        Nothing = 0x00,Catch::WarnAbout::What::x003046,99692
+        NoAssertions Catch::WarnAbout::What::NoAssertions3047,99716
+        NoAssertions = 0x01Catch::WarnAbout::What::x013047,99716
+    struct ShowDurations Catch::ShowDurations3050,99755
+    struct ShowDurations { enum OrNot Catch::ShowDurations::OrNot3050,99755
+        DefaultForReporter,Catch::ShowDurations::OrNot::DefaultForReporter3051,99795
+        Always,Catch::ShowDurations::OrNot::Always3052,99823
+        NeverCatch::ShowDurations::OrNot::Never3053,99839
+    struct RunTests Catch::RunTests3055,99863
+    struct RunTests { enum InWhatOrder Catch::RunTests::InWhatOrder3055,99863
+        InDeclarationOrder,Catch::RunTests::InWhatOrder::InDeclarationOrder3056,99904
+        InLexicographicalOrder,Catch::RunTests::InWhatOrder::InLexicographicalOrder3057,99932
+        InRandomOrderCatch::RunTests::InWhatOrder::InRandomOrder3058,99964
+    struct IConfig Catch::IConfig3063,100018
+#define TWOBLUECUBES_CATCH_STREAM_H_INCLUDED3084,100803
+namespace Catch 3092,100940
+    class Stream Catch::Stream3094,100959
+        std::streambuf* streamBuf;Catch::Stream::streamBuf3100,101094
+        bool isOwned;Catch::Stream::isOwned3103,101143
+#define CATCH_CONFIG_CONSOLE_WIDTH 3117,101355
+namespace Catch 3120,101401
+    struct ConfigData Catch::ConfigData3122,101420
+        ConfigData(Catch::ConfigData::ConfigData3124,101445
+        bool listTests;Catch::ConfigData::listTests3143,102091
+        bool listTags;Catch::ConfigData::listTags3144,102115
+        bool listReporters;Catch::ConfigData::listReporters3145,102138
+        bool listTestNamesOnly;Catch::ConfigData::listTestNamesOnly3146,102166
+        bool showSuccessfulTests;Catch::ConfigData::showSuccessfulTests3148,102199
+        bool shouldDebugBreak;Catch::ConfigData::shouldDebugBreak3149,102233
+        bool noThrow;Catch::ConfigData::noThrow3150,102264
+        bool showHelp;Catch::ConfigData::showHelp3151,102286
+        bool showInvisibles;Catch::ConfigData::showInvisibles3152,102309
+        bool forceColour;Catch::ConfigData::forceColour3153,102338
+        int abortAfter;Catch::ConfigData::abortAfter3155,102365
+        unsigned int rngSeed;Catch::ConfigData::rngSeed3156,102389
+        Verbosity::Level verbosity;Catch::ConfigData::verbosity3158,102420
+        WarnAbout::What warnings;Catch::ConfigData::warnings3159,102456
+        ShowDurations::OrNot showDurations;Catch::ConfigData::showDurations3160,102490
+        RunTests::InWhatOrder runOrder;Catch::ConfigData::runOrder3161,102534
+        std::string reporterName;Catch::ConfigData::reporterName3163,102575
+        std::string outputFilename;Catch::ConfigData::outputFilename3164,102609
+        std::string name;Catch::ConfigData::name3165,102645
+        std::string processName;Catch::ConfigData::processName3166,102671
+        std::vector<std::string> testsOrTags;Catch::ConfigData::testsOrTags3168,102705
+    class Config Catch::Config3171,102759
+        Config(Catch::Config::Config3178,102954
+        Config(Catch::Config::Config3182,103025
+        virtual ~Config(Catch::Config::~Config3194,103464
+        void setFilename(Catch::Config::setFilename3199,103584
+        std::string const& getFilename(Catch::Config::getFilename3203,103699
+        bool listTests(Catch::Config::listTests3207,103802
+        bool listTestNamesOnly(Catch::Config::listTestNamesOnly3208,103862
+        bool listTags(Catch::Config::listTags3209,103938
+        bool listReporters(Catch::Config::listReporters3210,103996
+        std::string getProcessName(Catch::Config::getProcessName3212,104065
+        bool shouldDebugBreak(Catch::Config::shouldDebugBreak3214,104140
+        void setStreamBuf(Catch::Config::setStreamBuf3216,104215
+        void useStream(Catch::Config::useStream3220,104338
+        std::string getReporterName(Catch::Config::getReporterName3227,104572
+        int abortAfter(Catch::Config::abortAfter3229,104649
+        TestSpec const& testSpec(Catch::Config::testSpec3231,104711
+        bool showHelp(Catch::Config::showHelp3233,104776
+        bool showInvisibles(Catch::Config::showInvisibles3234,104834
+        virtual bool allowThrows(Catch::Config::allowThrows3237,104934
+        virtual std::ostream& stream(Catch::Config::stream3238,105010
+        virtual std::string name(Catch::Config::name3239,105075
+        virtual bool includeSuccessfulResults(Catch::Config::includeSuccessfulResults3240,105190
+        virtual bool warnAboutMissingAssertions(Catch::Config::warnAboutMissingAssertions3241,105285
+        virtual ShowDurations::OrNot showDurations(Catch::Config::showDurations3242,105395
+        virtual RunTests::InWhatOrder runOrder(Catch::Config::runOrder3243,105487
+        virtual unsigned int rngSeed(Catch::Config::rngSeed3244,105571
+        virtual bool forceColour(Catch::Config::forceColour3245,105646
+        ConfigData m_data;Catch::Config::m_data3248,105732
+        Stream m_stream;Catch::Config::m_stream3250,105760
+        mutable std::ostream m_os;Catch::Config::m_os3251,105785
+        TestSpec m_testSpec;Catch::Config::m_testSpec3252,105820
+#define TWOBLUECUBES_CATCH_CLARA_H_INCLUDED3258,105916
+#define CATCH_TEMP_CLARA_CONFIG_CONSOLE_WIDTH 3262,106078
+#undef CLARA_CONFIG_CONSOLE_WIDTH3263,106151
+#define CLARA_CONFIG_CONSOLE_WIDTH 3265,106192
+#define STITCH_CLARA_OPEN_NAMESPACE 3268,106299
+#define TWOBLUECUBES_CLARA_H_INCLUDED3275,106578
+#define STITCH_CLARA_OPEN_NAMESPACE3276,106616
+#define STITCH_CLARA_CLOSE_NAMESPACE3277,106652
+#define STITCH_CLARA_CLOSE_NAMESPACE 3279,106695
+#define STITCH_TBC_TEXT_FORMAT_OPEN_NAMESPACE 3282,106742
+#define TBC_TEXT_FORMAT_H_INCLUDED3289,107081
+namespace STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE 3298,107258
+namespace Tbc STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc3301,107317
+    struct TextAttributes STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes3309,107496
+        TextAttributes(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::TextAttributes3310,107524
+        TextAttributes& setInitialIndent(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::setInitialIndent3317,107699
+        TextAttributes& setIndent(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::setIndent3318,107805
+        TextAttributes& setWidth(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::setWidth3319,107904
+        TextAttributes& setTabChar(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::setTabChar3320,108002
+        std::size_t initialIndent;STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::initialIndent3322,108103
+        std::size_t indent;STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::indent3323,108172
+        std::size_t width;STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::width3324,108271
+        char tabChar;STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::tabChar3325,108373
+    class Text STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text3328,108478
+        Text(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::Text3330,108507
+        void spliceLine(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::spliceLine3386,110915
+        typedef std::vector<std::string>::const_iterator const_iterator;STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::const_iterator3391,111161
+        const_iterator begin(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::begin3393,111235
+        const_iterator end(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::end3394,111298
+        std::string const& last(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::last3395,111357
+        std::size_t size(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::size3396,111422
+        std::string toString(STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::toString3398,111572
+        inline friend std::ostream& operator << STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::operator <<3404,111714
+        std::string str;STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::str3415,112103
+        TextAttributes attr;STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::attr3416,112128
+        std::vector<std::string> lines;STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::lines3417,112157
+#undef STITCH_TBC_TEXT_FORMAT_OPEN_NAMESPACE3431,112479
+namespace Clara 3443,112704
+    struct UnpositionalTag Clara::UnpositionalTag3445,112723
+    extern UnpositionalTag _;Clara::_3447,112755
+    UnpositionalTag _;Clara::_3450,112811
+    namespace Detail Clara::Detail3453,112842
+        inline bool startsWith(Clara::Detail::startsWith3463,113045
+        template<typename T> struct RemoveConstRef{Clara::Detail::RemoveConstRef3467,113234
+        template<typename T> struct RemoveConstRef{ typedef T type;Clara::Detail::RemoveConstRef::type3467,113234
+        template<typename T> struct RemoveConstRef<Clara::Detail::RemoveConstRef3468,113305
+        template<typename T> struct RemoveConstRef<T&>{ typedef T type;Clara::Detail::RemoveConstRef::type3468,113305
+        template<typename T> struct RemoveConstRef<Clara::Detail::RemoveConstRef3469,113380
+        template<typename T> struct RemoveConstRef<T const&>{ typedef T type;Clara::Detail::RemoveConstRef::type3469,113380
+        template<typename T> struct RemoveConstRef<Clara::Detail::RemoveConstRef3470,113461
+        template<typename T> struct RemoveConstRef<T const>{ typedef T type;Clara::Detail::RemoveConstRef::type3470,113461
+        template<typename T>    struct IsBool Clara::Detail::IsBool3472,113542
+        template<>              struct IsBool<Clara::Detail::IsBool3473,113632
+        void convertInto(Clara::Detail::convertInto3476,113751
+        inline void convertInto(Clara::Detail::convertInto3483,114043
+        inline void convertInto(Clara::Detail::convertInto3486,114166
+        inline void convertInto(Clara::Detail::convertInto3496,114822
+        inline void convertInto(Clara::Detail::convertInto3500,114953
+        struct IArgFunction Clara::Detail::IArgFunction3505,115107
+            virtual ~IArgFunction(Clara::Detail::IArgFunction::~IArgFunction3506,115137
+        class BoundArgFunction Clara::Detail::BoundArgFunction3518,115644
+            BoundArgFunction(Clara::Detail::BoundArgFunction::BoundArgFunction3520,115693
+            BoundArgFunction(Clara::Detail::BoundArgFunction::BoundArgFunction3521,115749
+            BoundArgFunction(Clara::Detail::BoundArgFunction::BoundArgFunction3522,115850
+            BoundArgFunction& operator = Clara::Detail::BoundArgFunction::operator =3523,115986
+            ~BoundArgFunction(Clara::Detail::BoundArgFunction::~BoundArgFunction3529,116300
+            void set(Clara::Detail::BoundArgFunction::set3531,116357
+            void setFlag(Clara::Detail::BoundArgFunction::setFlag3534,116496
+            bool takesArg(Clara::Detail::BoundArgFunction::takesArg3537,116610
+            bool isSet(Clara::Detail::BoundArgFunction::isSet3539,116681
+            IArgFunction<ConfigT>* functionObj;Clara::Detail::BoundArgFunction::functionObj3543,116789
+        struct NullBinder Clara::Detail::NullBinder3547,116878
+            virtual void set(Clara::Detail::NullBinder::set3548,116923
+            virtual void setFlag(Clara::Detail::NullBinder::setFlag3549,116987
+            virtual bool takesArg(Clara::Detail::NullBinder::takesArg3550,117035
+            virtual IArgFunction<C>* clone(Clara::Detail::NullBinder::clone3551,117094
+        template<typename C,Clara::Detail::C3554,117193
+        struct BoundDataMember Clara::Detail::BoundDataMember3555,117234
+            BoundDataMember(Clara::Detail::BoundDataMember::BoundDataMember3556,117284
+            virtual void set(Clara::Detail::BoundDataMember::set3557,117353
+            virtual void setFlag(Clara::Detail::BoundDataMember::setFlag3560,117499
+            virtual bool takesArg(Clara::Detail::BoundDataMember::takesArg3563,117610
+            virtual IArgFunction<C>* clone(Clara::Detail::BoundDataMember::clone3564,117682
+            M C::* member;Clara::Detail::BoundDataMember::member3565,117774
+        template<typename C,Clara::Detail::C3567,117812
+        struct BoundUnaryMethod Clara::Detail::BoundUnaryMethod3568,117853
+            BoundUnaryMethod(Clara::Detail::BoundUnaryMethod::BoundUnaryMethod3569,117904
+            virtual void set(Clara::Detail::BoundUnaryMethod::set3570,117983
+            virtual void setFlag(Clara::Detail::BoundUnaryMethod::setFlag3575,118219
+            virtual bool takesArg(Clara::Detail::BoundUnaryMethod::takesArg3580,118420
+            virtual IArgFunction<C>* clone(Clara::Detail::BoundUnaryMethod::clone3581,118492
+        struct BoundNullaryMethod Clara::Detail::BoundNullaryMethod3585,118661
+            BoundNullaryMethod(Clara::Detail::BoundNullaryMethod::BoundNullaryMethod3586,118714
+            virtual void set(Clara::Detail::BoundNullaryMethod::set3587,118792
+            virtual void setFlag(Clara::Detail::BoundNullaryMethod::setFlag3593,119025
+            virtual bool takesArg(Clara::Detail::BoundNullaryMethod::takesArg3596,119119
+            virtual IArgFunction<C>* clone(Clara::Detail::BoundNullaryMethod::clone3597,119179
+        struct BoundUnaryFunction Clara::Detail::BoundUnaryFunction3602,119348
+            BoundUnaryFunction(Clara::Detail::BoundUnaryFunction::BoundUnaryFunction3603,119401
+            virtual void set(Clara::Detail::BoundUnaryFunction::set3604,119486
+            virtual void setFlag(Clara::Detail::BoundUnaryFunction::setFlag3610,119723
+            virtual bool takesArg(Clara::Detail::BoundUnaryFunction::takesArg3613,119817
+            virtual IArgFunction<C>* clone(Clara::Detail::BoundUnaryFunction::clone3614,119877
+        template<typename C,Clara::Detail::C3618,120020
+        struct BoundBinaryFunction Clara::Detail::BoundBinaryFunction3619,120061
+            BoundBinaryFunction(Clara::Detail::BoundBinaryFunction::BoundBinaryFunction3620,120115
+            virtual void set(Clara::Detail::BoundBinaryFunction::set3621,120204
+            virtual void setFlag(Clara::Detail::BoundBinaryFunction::setFlag3626,120444
+            virtual bool takesArg(Clara::Detail::BoundBinaryFunction::takesArg3631,120649
+            virtual IArgFunction<C>* clone(Clara::Detail::BoundBinaryFunction::clone3632,120721
+    struct Parser Clara::Parser3638,120895
+        Parser(Clara::Parser::Parser3639,120915
+        struct Token Clara::Parser::Token3641,120960
+            enum Type Clara::Parser::Token::Type3642,120983
+            enum Type { Positional,Clara::Parser::Token::Type::Positional3642,120983
+            enum Type { Positional, ShortOpt,Clara::Parser::Token::Type::ShortOpt3642,120983
+            enum Type { Positional, ShortOpt, LongOpt Clara::Parser::Token::Type::LongOpt3642,120983
+            Token(Clara::Parser::Token::Token3643,121040
+            Type type;Clara::Parser::Token::type3644,121132
+            std::string data;Clara::Parser::Token::data3645,121155
+        void parseIntoTokens(Clara::Parser::parseIntoTokens3648,121197
+        void parseIntoTokens(Clara::Parser::parseIntoTokens3653,121489
+        std::string separators;Clara::Parser::separators3679,122812
+    struct CommonArgProperties Clara::CommonArgProperties3683,122883
+        CommonArgProperties(Clara::CommonArgProperties::CommonArgProperties3684,122916
+        CommonArgProperties(Clara::CommonArgProperties::CommonArgProperties3685,122949
+        Detail::BoundArgFunction<ConfigT> boundField;Clara::CommonArgProperties::boundField3687,123065
+        std::string description;Clara::CommonArgProperties::description3688,123119
+        std::string detail;Clara::CommonArgProperties::detail3689,123152
+        std::string placeholder;Clara::CommonArgProperties::placeholder3690,123180
+        bool takesArg(Clara::CommonArgProperties::takesArg3692,123255
+        void validate(Clara::CommonArgProperties::validate3695,123338
+    struct OptionArgProperties Clara::OptionArgProperties3700,123487
+        std::vector<std::string> shortNames;Clara::OptionArgProperties::shortNames3701,123520
+        std::string longName;Clara::OptionArgProperties::longName3702,123565
+        bool hasShortName(Clara::OptionArgProperties::hasShortName3704,123596
+        bool hasLongName(Clara::OptionArgProperties::hasLongName3707,123773
+    struct PositionalArgProperties Clara::PositionalArgProperties3711,123897
+        PositionalArgProperties(Clara::PositionalArgProperties::PositionalArgProperties3712,123934
+        int position;Clara::PositionalArgProperties::position3713,123988
+        bool isFixedPositional(Clara::PositionalArgProperties::isFixedPositional3715,124049
+    class CommandLine Clara::CommandLine3721,124174
+        struct Arg Clara::CommandLine::Arg3723,124199
+            Arg(Clara::CommandLine::Arg::Arg3724,124297
+            Arg(Clara::CommandLine::Arg::Arg3725,124318
+            using CommonArgProperties<ConfigT>::placeholder;Clara::CommandLine::Arg::placeholder3727,124440
+            std::string dbgName(Clara::CommandLine::Arg::dbgName3729,124510
+            std::string commands(Clara::CommandLine::Arg::commands3736,124782
+        typedef std::unique_ptr<Arg> ArgAutoPtr;Clara::CommandLine::ArgAutoPtr3760,125685
+        typedef std::auto_ptr<Arg> ArgAutoPtr;Clara::CommandLine::ArgAutoPtr3762,125740
+        class ArgBuilder Clara::CommandLine::ArgBuilder3787,126717
+            ArgBuilder(Clara::CommandLine::ArgBuilder::ArgBuilder3789,126760
+            template<typename C,Clara::CommandLine::ArgBuilder::C3792,126890
+            void bind(Clara::CommandLine::ArgBuilder::bind3793,126935
+            void bind(Clara::CommandLine::ArgBuilder::bind3799,127251
+            template<typename C,Clara::CommandLine::ArgBuilder::C3804,127490
+            void bind(Clara::CommandLine::ArgBuilder::bind3805,127535
+            void bind(Clara::CommandLine::ArgBuilder::bind3812,127903
+            void bind(Clara::CommandLine::ArgBuilder::bind3818,128187
+            void bind(Clara::CommandLine::ArgBuilder::bind3824,128499
+            template<typename C,Clara::CommandLine::ArgBuilder::C3829,128778
+            void bind(Clara::CommandLine::ArgBuilder::bind3830,128823
+            ArgBuilder& describe(Clara::CommandLine::ArgBuilder::describe3835,129073
+            ArgBuilder& detail(Clara::CommandLine::ArgBuilder::detail3839,129236
+            Arg* m_arg;Clara::CommandLine::ArgBuilder::m_arg3845,129402
+        class OptBuilder Clara::CommandLine::OptBuilder3848,129438
+            OptBuilder(Clara::CommandLine::OptBuilder::OptBuilder3850,129501
+            OptBuilder(Clara::CommandLine::OptBuilder::OptBuilder3851,129559
+        CommandLine(Clara::CommandLine::CommandLine3861,129824
+        CommandLine(Clara::CommandLine::CommandLine3866,130023
+        CommandLine& setThrowOnUnrecognisedTokens(Clara::CommandLine::setThrowOnUnrecognisedTokens3877,130526
+        template<typename C,Clara::CommandLine::C3907,131718
+        void bindProcessName(Clara::CommandLine::bindProcessName3908,131759
+        template<typename C,Clara::CommandLine::C3911,131892
+        void bindProcessName(Clara::CommandLine::bindProcessName3912,131933
+        void optUsage(Clara::CommandLine::optUsage3916,132091
+        std::string optUsage(Clara::CommandLine::optUsage3940,133423
+        void argSynopsis(Clara::CommandLine::argSynopsis3946,133568
+        std::string argSynopsis(Clara::CommandLine::argSynopsis3965,134491
+        void usage(Clara::CommandLine::usage3971,134642
+        std::string usage(Clara::CommandLine::usage3981,135007
+        ConfigT parse(Clara::CommandLine::parse3987,135185
+        std::vector<Parser::Token> parseInto(Clara::CommandLine::parseInto3993,135365
+        std::vector<Parser::Token> populate(Clara::CommandLine::populate4005,135955
+        std::vector<Parser::Token> populateOptions(Clara::CommandLine::populateOptions4013,136368
+        std::vector<Parser::Token> populateFixedArgs(Clara::CommandLine::populateFixedArgs4061,138851
+        std::vector<Parser::Token> populateFloatingArgs(Clara::CommandLine::populateFloatingArgs4076,139620
+        void validate(Clara::CommandLine::validate4090,140254
+        Detail::BoundArgFunction<ConfigT> m_boundProcessName;Clara::CommandLine::m_boundProcessName4102,140727
+        std::vector<Arg> m_options;Clara::CommandLine::m_options4103,140789
+        std::map<Clara::CommandLine::std::map4104,140825
+        std::map<int, Arg> m_positionalArgs;Clara::CommandLine::m_positionalArgs4104,140825
+        ArgAutoPtr m_floatingArg;Clara::CommandLine::m_floatingArg4105,140870
+        int m_highestSpecifiedArgPosition;Clara::CommandLine::m_highestSpecifiedArgPosition4106,140904
+        bool m_throwOnUnrecognisedTokens;Clara::CommandLine::m_throwOnUnrecognisedTokens4107,140947
+#undef STITCH_CLARA_OPEN_NAMESPACE4113,141052
+#undef STITCH_CLARA_CLOSE_NAMESPACE4114,141087
+#undef STITCH_CLARA_OPEN_NAMESPACE4117,141164
+#define CLARA_CONFIG_CONSOLE_WIDTH 4121,141300
+#undef CATCH_TEMP_CLARA_CONFIG_CONSOLE_WIDTH4122,141373
+namespace Catch 4127,141446
+    inline void abortAfterFirst(Catch::abortAfterFirst4129,141465
+    inline void abortAfterX(Catch::abortAfterX4130,141546
+    inline void addTestOrTags(Catch::addTestOrTags4135,141762
+    inline void addWarning(Catch::addWarning4137,141892
+    inline void setOrder(Catch::setOrder4143,142221
+    inline void setRngSeed(Catch::setRngSeed4153,142721
+    inline void setVerbosity(Catch::setVerbosity4165,143168
+    inline void setShowDurations(Catch::setShowDurations4169,143338
+    inline void loadTestNamesFromFile(Catch::loadTestNamesFromFile4174,143540
+    inline Clara::CommandLine<ConfigData> makeCommandLineParser(Catch::makeCommandLineParser4187,144027
+#define TWOBLUECUBES_CATCH_LIST_HPP_INCLUDED4293,147514
+#define TWOBLUECUBES_CATCH_TEXT_H_INCLUDED4296,147592
+#define TBC_TEXT_FORMAT_CONSOLE_WIDTH 4298,147636
+#define CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE 4300,147702
+#   define TWOBLUECUBES_TEXT_FORMAT_H_ALREADY_INCLUDED4306,148013
+#  define TWOBLUECUBES_TEXT_FORMAT_H_INCLUDED4309,148084
+namespace CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE 4319,148331
+namespace Tbc CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc4322,148390
+    struct TextAttributes CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes4330,148569
+        TextAttributes(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::TextAttributes4331,148597
+        TextAttributes& setInitialIndent(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::setInitialIndent4338,148772
+        TextAttributes& setIndent(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::setIndent4339,148878
+        TextAttributes& setWidth(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::setWidth4340,148977
+        TextAttributes& setTabChar(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::setTabChar4341,149075
+        std::size_t initialIndent;CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::initialIndent4343,149176
+        std::size_t indent;CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::indent4344,149245
+        std::size_t width;CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::width4345,149344
+        char tabChar;CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes::tabChar4346,149446
+    class Text CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text4349,149551
+        Text(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::Text4351,149580
+        void spliceLine(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::spliceLine4407,151988
+        typedef std::vector<std::string>::const_iterator const_iterator;CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::const_iterator4412,152234
+        const_iterator begin(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::begin4414,152308
+        const_iterator end(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::end4415,152371
+        std::string const& last(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::last4416,152430
+        std::size_t size(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::size4417,152495
+        std::string toString(CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::toString4419,152645
+        inline friend std::ostream& operator << CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::operator <<4425,152787
+        std::string str;CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::str4436,153176
+        TextAttributes attr;CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::attr4437,153201
+        std::vector<std::string> lines;CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text::lines4438,153230
+#undef CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE4448,153435
+namespace Catch 4450,153482
+    using Tbc::Text;Catch::Tbc::Text4451,153500
+    using Tbc::TextAttributes;Catch::Tbc::TextAttributes4452,153521
+#define TWOBLUECUBES_CATCH_CONSOLE_COLOUR_HPP_INCLUDED4456,153599
+namespace Catch 4458,153655
+    struct Colour Catch::Colour4460,153674
+        enum Code Catch::Colour::Code4461,153694
+            None Catch::Colour::Code::None4462,153714
+            White,Catch::Colour::Code::White4464,153737
+            Red,Catch::Colour::Code::Red4465,153756
+            Green,Catch::Colour::Code::Green4466,153773
+            Blue,Catch::Colour::Code::Blue4467,153792
+            Cyan,Catch::Colour::Code::Cyan4468,153810
+            Yellow,Catch::Colour::Code::Yellow4469,153828
+            Grey,Catch::Colour::Code::Grey4470,153848
+            Bright Catch::Colour::Code::Bright4472,153867
+            Bright = 0x10,Catch::Colour::Code::x104472,153867
+            BrightRed Catch::Colour::Code::BrightRed4474,153895
+            BrightRed = Bright Catch::Colour::Code::Bright4474,153895
+            BrightRed = Bright | Red,Catch::Colour::Code::Red4474,153895
+            BrightGreen Catch::Colour::Code::BrightGreen4475,153933
+            BrightGreen = Bright Catch::Colour::Code::Bright4475,153933
+            BrightGreen = Bright | Green,Catch::Colour::Code::Green4475,153933
+            LightGrey Catch::Colour::Code::LightGrey4476,153975
+            LightGrey = Bright Catch::Colour::Code::Bright4476,153975
+            LightGrey = Bright | Grey,Catch::Colour::Code::Grey4476,153975
+            BrightWhite Catch::Colour::Code::BrightWhite4477,154014
+            BrightWhite = Bright Catch::Colour::Code::Bright4477,154014
+            BrightWhite = Bright | White,Catch::Colour::Code::White4477,154014
+            FileName Catch::Colour::Code::FileName4480,154085
+            FileName = LightGrey,Catch::Colour::Code::LightGrey4480,154085
+            Warning Catch::Colour::Code::Warning4481,154119
+            Warning = Yellow,Catch::Colour::Code::Yellow4481,154119
+            ResultError Catch::Colour::Code::ResultError4482,154149
+            ResultError = BrightRed,Catch::Colour::Code::BrightRed4482,154149
+            ResultSuccess Catch::Colour::Code::ResultSuccess4483,154186
+            ResultSuccess = BrightGreen,Catch::Colour::Code::BrightGreen4483,154186
+            ResultExpectedFailure Catch::Colour::Code::ResultExpectedFailure4484,154227
+            ResultExpectedFailure = Warning,Catch::Colour::Code::Warning4484,154227
+            Error Catch::Colour::Code::Error4486,154273
+            Error = BrightRed,Catch::Colour::Code::BrightRed4486,154273
+            Success Catch::Colour::Code::Success4487,154304
+            Success = Green,Catch::Colour::Code::Green4487,154304
+            OriginalExpression Catch::Colour::Code::OriginalExpression4489,154334
+            OriginalExpression = Cyan,Catch::Colour::Code::Cyan4489,154334
+            ReconstructedExpression Catch::Colour::Code::ReconstructedExpression4490,154373
+            ReconstructedExpression = Yellow,Catch::Colour::Code::Yellow4490,154373
+            SecondaryText Catch::Colour::Code::SecondaryText4492,154420
+            SecondaryText = LightGrey,Catch::Colour::Code::LightGrey4492,154420
+            Headers Catch::Colour::Code::Headers4493,154459
+            Headers = WhiteCatch::Colour::Code::White4493,154459
+        bool m_moved;Catch::Colour::m_moved4505,154752
+    inline std::ostream& operator << Catch::operator <<4508,154782
+#define TWOBLUECUBES_CATCH_INTERFACES_REPORTER_H_INCLUDED4513,154944
+namespace Catch4520,155076
+    struct ReporterConfig Catch::ReporterConfig4522,155094
+        explicit ReporterConfig(Catch::ReporterConfig::ReporterConfig4523,155122
+        ReporterConfig(Catch::ReporterConfig::ReporterConfig4526,155269
+        std::ostream& stream(Catch::ReporterConfig::stream4529,155416
+        Ptr<IConfig> fullConfig(Catch::ReporterConfig::fullConfig4530,155478
+        std::ostream* m_stream;Catch::ReporterConfig::m_stream4533,155557
+        Ptr<IConfig> m_fullConfig;Catch::ReporterConfig::m_fullConfig4534,155589
+    struct ReporterPreferences Catch::ReporterPreferences4537,155632
+        ReporterPreferences(Catch::ReporterPreferences::ReporterPreferences4538,155665
+        bool shouldRedirectStdOut;Catch::ReporterPreferences::shouldRedirectStdOut4542,155747
+    struct LazyStat Catch::LazyStat4546,155815
+        LazyStat(Catch::LazyStat::LazyStat4547,155849
+        LazyStat& operator=(Catch::LazyStat::operator=4548,155887
+        void reset(Catch::LazyStat::reset4553,156042
+        bool used;Catch::LazyStat::used4557,156133
+    struct TestRunInfo Catch::TestRunInfo4560,156160
+        TestRunInfo(Catch::TestRunInfo::TestRunInfo4561,156185
+        std::string name;Catch::TestRunInfo::name4562,156252
+    struct GroupInfo Catch::GroupInfo4564,156285
+        GroupInfo(Catch::GroupInfo::GroupInfo4565,156308
+        std::string name;Catch::GroupInfo::name4573,156565
+        std::size_t groupIndex;Catch::GroupInfo::groupIndex4574,156591
+        std::size_t groupsCounts;Catch::GroupInfo::groupsCounts4575,156623
+    struct AssertionStats Catch::AssertionStats4578,156665
+        AssertionStats(Catch::AssertionStats::AssertionStats4579,156693
+        AssertionResult assertionResult;Catch::AssertionStats::assertionResult4605,157909
+        std::vector<MessageInfo> infoMessages;Catch::AssertionStats::infoMessages4606,157950
+        Totals totals;Catch::AssertionStats::totals4607,157997
+    struct SectionStats Catch::SectionStats4610,158028
+        SectionStats(Catch::SectionStats::SectionStats4611,158054
+        SectionInfo sectionInfo;Catch::SectionStats::sectionInfo4628,158820
+        Counts assertions;Catch::SectionStats::assertions4629,158853
+        double durationInSeconds;Catch::SectionStats::durationInSeconds4630,158880
+        bool missingAssertions;Catch::SectionStats::missingAssertions4631,158914
+    struct TestCaseStats Catch::TestCaseStats4634,158954
+        TestCaseStats(Catch::TestCaseStats::TestCaseStats4635,158981
+        TestCaseInfo testInfo;Catch::TestCaseStats::testInfo4655,159770
+        Totals totals;Catch::TestCaseStats::totals4656,159801
+        std::string stdOut;Catch::TestCaseStats::stdOut4657,159824
+        std::string stdErr;Catch::TestCaseStats::stdErr4658,159852
+        bool aborting;Catch::TestCaseStats::aborting4659,159880
+    struct TestGroupStats Catch::TestGroupStats4662,159911
+        TestGroupStats(Catch::TestGroupStats::TestGroupStats4663,159939
+        TestGroupStats(Catch::TestGroupStats::TestGroupStats4670,160193
+        GroupInfo groupInfo;Catch::TestGroupStats::groupInfo4683,160705
+        Totals totals;Catch::TestGroupStats::totals4684,160734
+        bool aborting;Catch::TestGroupStats::aborting4685,160757
+    struct TestRunStats Catch::TestRunStats4688,160788
+        TestRunStats(Catch::TestRunStats::TestRunStats4689,160814
+        TestRunStats(Catch::TestRunStats::TestRunStats4699,161145
+        TestRunInfo runInfo;Catch::TestRunStats::runInfo4711,161613
+        Totals totals;Catch::TestRunStats::totals4712,161642
+        bool aborting;Catch::TestRunStats::aborting4713,161665
+    struct IStreamingReporter Catch::IStreamingReporter4716,161696
+    struct IReporterFactory Catch::IReporterFactory4744,162975
+    struct IReporterRegistry Catch::IReporterRegistry4750,163192
+        typedef std::map<std::string,Catch::IReporterRegistry::std::string4751,163223
+        typedef std::map<std::string, IReporterFactory*> FactoryMap;Catch::IReporterRegistry::FactoryMap4751,163223
+namespace Catch 4763,163551
+    inline std::size_t listTests(Catch::listTests4765,163570
+    inline std::size_t listTestsNamesOnly(Catch::listTestsNamesOnly4804,165224
+    struct TagInfo Catch::TagInfo4821,166038
+        TagInfo(Catch::TagInfo::TagInfo4822,166059
+        void add(Catch::TagInfo::add4823,166094
+        std::string all(Catch::TagInfo::all4827,166217
+        std::set<std::string> spellings;Catch::TagInfo::spellings4835,166526
+        std::size_t count;Catch::TagInfo::count4836,166567
+    inline std::size_t listTags(Catch::listTags4839,166602
+    inline std::size_t listReporters(Catch::listReporters4884,168931
+    inline Option<std::size_t> list(Catch::list4907,170119
+#define TWOBLUECUBES_CATCH_RUNNER_IMPL_HPP_INCLUDED4923,170776
+#define TWOBLUECUBES_CATCH_TEST_CASE_TRACKER_HPP_INCLUDED4926,170876
+namespace Catch 4932,170989
+namespace SectionTracking Catch::SectionTracking4933,171007
+    class TrackedSection Catch::SectionTracking::TrackedSection4935,171036
+        typedef std::map<std::string,Catch::SectionTracking::TrackedSection::std::string4937,171064
+        typedef std::map<std::string, TrackedSection> TrackedSections;Catch::SectionTracking::TrackedSection::TrackedSections4937,171064
+        enum RunState Catch::SectionTracking::TrackedSection::RunState4940,171148
+            NotStarted,Catch::SectionTracking::TrackedSection::RunState::NotStarted4941,171172
+            Executing,Catch::SectionTracking::TrackedSection::RunState::Executing4942,171196
+            ExecutingChildren,Catch::SectionTracking::TrackedSection::RunState::ExecutingChildren4943,171219
+            CompletedCatch::SectionTracking::TrackedSection::RunState::Completed4944,171250
+        TrackedSection(Catch::SectionTracking::TrackedSection::TrackedSection4947,171284
+        RunState runState(Catch::SectionTracking::TrackedSection::runState4951,171443
+        void enter(Catch::SectionTracking::TrackedSection::enter4956,171639
+        TrackedSection* getParent(Catch::SectionTracking::TrackedSection::getParent4962,171778
+        bool hasChildren(Catch::SectionTracking::TrackedSection::hasChildren4965,171855
+        std::string m_name;Catch::SectionTracking::TrackedSection::m_name4970,171954
+        RunState m_runState;Catch::SectionTracking::TrackedSection::m_runState4971,171982
+        TrackedSections m_children;Catch::SectionTracking::TrackedSection::m_children4972,172011
+        TrackedSection* m_parent;Catch::SectionTracking::TrackedSection::m_parent4973,172047
+    inline TrackedSection* TrackedSection::findChild(Catch::SectionTracking::TrackedSection::findChild4976,172089
+    inline TrackedSection* TrackedSection::acquireChild(Catch::SectionTracking::TrackedSection::acquireChild4982,172335
+    inline void TrackedSection::leave(Catch::SectionTracking::TrackedSection::leave4988,172650
+    class TestCaseTracker Catch::SectionTracking::TestCaseTracker4999,173020
+        TestCaseTracker(Catch::SectionTracking::TestCaseTracker::TestCaseTracker5001,173060
+        bool enterSection(Catch::SectionTracking::TestCaseTracker::enterSection5007,173270
+        void leaveSection(Catch::SectionTracking::TestCaseTracker::leaveSection5016,173639
+        bool currentSectionHasChildren(Catch::SectionTracking::TestCaseTracker::currentSectionHasChildren5023,173876
+        bool isCompleted(Catch::SectionTracking::TestCaseTracker::isCompleted5026,173987
+        class Guard Catch::SectionTracking::TestCaseTracker::Guard5030,174104
+            Guard(Catch::SectionTracking::TestCaseTracker::Guard::Guard5032,174142
+            ~Guard(Catch::SectionTracking::TestCaseTracker::Guard::~Guard5035,174270
+            TestCaseTracker& m_tracker;Catch::SectionTracking::TestCaseTracker::Guard::m_tracker5041,174448
+        void enterTestCase(Catch::SectionTracking::TestCaseTracker::enterTestCase5045,174513
+        void leaveTestCase(Catch::SectionTracking::TestCaseTracker::leaveTestCase5050,174678
+        TrackedSection m_testCase;Catch::SectionTracking::TestCaseTracker::m_testCase5054,174752
+        TrackedSection* m_currentSection;Catch::SectionTracking::TestCaseTracker::m_currentSection5055,174787
+        bool m_completedASectionThisRun;Catch::SectionTracking::TestCaseTracker::m_completedASectionThisRun5056,174829
+using SectionTracking::TestCaseTracker;5061,174910
+#define TWOBLUECUBES_CATCH_FATAL_CONDITION_H_INCLUDED5066,175018
+namespace Catch 5068,175073
+    inline void fatal(Catch::fatal5071,175148
+namespace Catch 5084,175602
+    struct FatalConditionHandler Catch::FatalConditionHandler5086,175621
+		void reset(Catch::FatalConditionHandler::reset5087,175656
+namespace Catch 5096,175804
+    struct SignalDefs Catch::SignalDefs5098,175823
+    struct SignalDefs { int id;Catch::SignalDefs::id5098,175823
+    struct SignalDefs { int id; const char* name;Catch::SignalDefs::name5098,175823
+    extern SignalDefs signalDefs[Catch::signalDefs5099,175876
+    SignalDefs signalDefs[Catch::signalDefs5100,175912
+    struct FatalConditionHandler Catch::FatalConditionHandler5109,176354
+        static void handleSignal(Catch::FatalConditionHandler::handleSignal5111,176390
+        FatalConditionHandler(Catch::FatalConditionHandler::FatalConditionHandler5118,176680
+        ~FatalConditionHandler(Catch::FatalConditionHandler::~FatalConditionHandler5122,176885
+        void reset(Catch::FatalConditionHandler::reset5125,176951
+        bool m_isSet;Catch::FatalConditionHandler::m_isSet5133,177206
+namespace Catch 5143,177315
+    class StreamRedirect Catch::StreamRedirect5145,177334
+        StreamRedirect(Catch::StreamRedirect::StreamRedirect5148,177374
+        ~StreamRedirect(Catch::StreamRedirect::~StreamRedirect5156,177628
+        std::ostream& m_stream;Catch::StreamRedirect::m_stream5162,177764
+        std::streambuf* m_prevBuf;Catch::StreamRedirect::m_prevBuf5163,177796
+        std::ostringstream m_oss;Catch::StreamRedirect::m_oss5164,177831
+        std::string& m_targetString;Catch::StreamRedirect::m_targetString5165,177865
+    class RunContext Catch::RunContext5170,177991
+        explicit RunContext(Catch::RunContext::RunContext5177,178156
+        virtual ~RunContext(Catch::RunContext::~RunContext5193,178836
+        void testGroupStarting(Catch::RunContext::testGroupStarting5201,179170
+        void testGroupEnded(Catch::RunContext::testGroupEnded5204,179386
+        Totals runTest(Catch::RunContext::runTest5208,179657
+        Ptr<IConfig const> config(Catch::RunContext::config5243,180962
+        virtual void assertionEnded(Catch::RunContext::assertionEnded5249,181078
+        virtual bool sectionStarted Catch::RunContext::sectionStarted5265,181756
+        bool testForMissingAssertions(Catch::RunContext::testForMissingAssertions5284,182294
+        virtual void sectionEnded(Catch::RunContext::sectionEnded5294,182672
+        virtual void pushScopedMessage(Catch::RunContext::pushScopedMessage5309,183343
+        virtual void popScopedMessage(Catch::RunContext::popScopedMessage5313,183470
+        virtual std::string getCurrentTestName(Catch::RunContext::getCurrentTestName5317,183663
+        virtual const AssertionResult* getLastResult(Catch::RunContext::getLastResult5323,183848
+        virtual void handleFatalErrorCondition(Catch::RunContext::handleFatalErrorCondition5327,183956
+        bool aborting(Catch::RunContext::aborting5360,185533
+        void runCurrentTest(Catch::RunContext::runCurrentTest5366,185691
+        void invokeActiveTestCase(Catch::RunContext::invokeActiveTestCase5410,187756
+        ResultBuilder makeUnexpectedResultBuilder(Catch::RunContext::makeUnexpectedResultBuilder5418,187977
+        void handleUnfinishedSections(Catch::RunContext::handleUnfinishedSections5425,188350
+        struct UnfinishedSections Catch::RunContext::UnfinishedSections5436,188920
+            UnfinishedSections(Catch::RunContext::UnfinishedSections::UnfinishedSections5437,188956
+            SectionInfo info;Catch::RunContext::UnfinishedSections::info5441,189193
+            Counts prevAssertions;Catch::RunContext::UnfinishedSections::prevAssertions5442,189223
+            double durationInSeconds;Catch::RunContext::UnfinishedSections::durationInSeconds5443,189258
+        TestRunInfo m_runInfo;Catch::RunContext::m_runInfo5446,189308
+        IMutableContext& m_context;Catch::RunContext::m_context5447,189339
+        TestCase const* m_activeTestCase;Catch::RunContext::m_activeTestCase5448,189375
+        Option<TestCaseTracker> m_testCaseTracker;Catch::RunContext::m_testCaseTracker5449,189417
+        AssertionResult m_lastResult;Catch::RunContext::m_lastResult5450,189468
+        Ptr<IConfig const> m_config;Catch::RunContext::m_config5452,189507
+        Totals m_totals;Catch::RunContext::m_totals5453,189544
+        Ptr<IStreamingReporter> m_reporter;Catch::RunContext::m_reporter5454,189569
+        std::vector<MessageInfo> m_messages;Catch::RunContext::m_messages5455,189613
+        IRunner* m_prevRunner;Catch::RunContext::m_prevRunner5456,189658
+        IResultCapture* m_prevResultCapture;Catch::RunContext::m_prevResultCapture5457,189689
+        Ptr<IConfig const> m_prevConfig;Catch::RunContext::m_prevConfig5458,189734
+        AssertionInfo m_lastAssertionInfo;Catch::RunContext::m_lastAssertionInfo5459,189775
+        std::vector<UnfinishedSections> m_unfinishedSections;Catch::RunContext::m_unfinishedSections5460,189818
+    IResultCapture& getResultCapture(Catch::getResultCapture5463,189888
+#define TWOBLUECUBES_CATCH_VERSION_H_INCLUDED5473,190195
+namespace Catch 5475,190242
+    struct Version Catch::Version5478,190291
+        unsigned int const majorVersion;Catch::Version::majorVersion5485,190557
+        unsigned int const minorVersion;Catch::Version::minorVersion5486,190598
+        unsigned int const patchNumber;Catch::Version::patchNumber5487,190639
+        std::string const branchName;Catch::Version::branchName5490,190742
+        unsigned int const buildNumber;Catch::Version::buildNumber5491,190780
+    extern Version libraryVersion;Catch::libraryVersion5499,190972
+namespace Catch 5506,191068
+    class Runner Catch::Runner5508,191087
+        Runner(Catch::Runner::Runner5511,191119
+        Totals runTests(Catch::Runner::runTests5518,191269
+        void openStream(Catch::Runner::openStream5560,192879
+        void makeReporter(Catch::Runner::makeReporter5572,193394
+        Ptr<Config> m_config;Catch::Runner::m_config5586,193928
+        std::ofstream m_ofs;Catch::Runner::m_ofs5587,193958
+        Ptr<IStreamingReporter> m_reporter;Catch::Runner::m_reporter5588,193987
+        std::set<TestCase> m_testsAlreadyRun;Catch::Runner::m_testsAlreadyRun5589,194031
+    class Session Catch::Session5592,194085
+        static bool alreadyInstantiated;Catch::Session::alreadyInstantiated5593,194119
+        struct OnUnusedOptions Catch::Session::OnUnusedOptions5597,194174
+        struct OnUnusedOptions { enum DoWhat Catch::Session::OnUnusedOptions::DoWhat5597,194174
+        struct OnUnusedOptions { enum DoWhat { Ignore,Catch::Session::OnUnusedOptions::DoWhat::Ignore5597,194174
+        struct OnUnusedOptions { enum DoWhat { Ignore, Fail Catch::Session::OnUnusedOptions::DoWhat::Fail5597,194174
+        Session(Catch::Session::Session5599,194241
+        ~Session(Catch::Session::~Session5608,194596
+        void showHelp(Catch::Session::showHelp5612,194658
+        int applyCommandLine(Catch::Session::applyCommandLine5619,194948
+        void useConfigData(Catch::Session::useConfigData5641,195937
+        int run(Catch::Session::run5646,196080
+        int run(Catch::Session::run5654,196304
+        Clara::CommandLine<ConfigData> const& cli(Catch::Session::cli5678,197019
+        std::vector<Clara::Parser::Token> const& unusedTokens(Catch::Session::unusedTokens5681,197115
+        ConfigData& configData(Catch::Session::configData5684,197232
+        Config& config(Catch::Session::config5687,197310
+        Clara::CommandLine<ConfigData> m_cli;Catch::Session::m_cli5694,197474
+        std::vector<Clara::Parser::Token> m_unusedTokens;Catch::Session::m_unusedTokens5695,197520
+        ConfigData m_configData;Catch::Session::m_configData5696,197578
+        Ptr<Config> m_config;Catch::Session::m_config5697,197611
+    bool Session::alreadyInstantiated Catch::Session::alreadyInstantiated5700,197649
+#define TWOBLUECUBES_CATCH_REGISTRY_HUB_HPP_INCLUDED5705,197765
+#define TWOBLUECUBES_CATCH_TEST_CASE_REGISTRY_IMPL_HPP_INCLUDED5708,197872
+namespace Catch 5716,198031
+    class TestRegistry Catch::TestRegistry5718,198050
+        struct LexSort Catch::TestRegistry::LexSort5719,198102
+            bool operator() Catch::TestRegistry::LexSort::operator()5720,198127
+        struct RandomNumberGenerator Catch::TestRegistry::RandomNumberGenerator5722,198213
+            int operator()(Catch::TestRegistry::RandomNumberGenerator::operator()5723,198252
+        TestRegistry(Catch::TestRegistry::TestRegistry5727,198346
+        virtual void registerTest(Catch::TestRegistry::registerTest5730,198428
+        virtual std::vector<TestCase> const& getAllTests(Catch::TestRegistry::getAllTests5756,199609
+        virtual std::vector<TestCase> const& getAllNonHiddenTests(Catch::TestRegistry::getAllNonHiddenTests5760,199726
+        virtual void getFilteredTests(Catch::TestRegistry::getFilteredTests5764,199854
+        static void sortTests(Catch::TestRegistry::sortTests5779,200554
+        std::set<TestCase> m_functions;Catch::TestRegistry::m_functions5796,201284
+        std::vector<TestCase> m_functionsInOrder;Catch::TestRegistry::m_functionsInOrder5797,201324
+        std::vector<TestCase> m_nonHiddenFunctions;Catch::TestRegistry::m_nonHiddenFunctions5798,201374
+        size_t m_unnamedCount;Catch::TestRegistry::m_unnamedCount5799,201426
+    class FreeFunctionTestCase Catch::FreeFunctionTestCase5804,201546
+        FreeFunctionTestCase(Catch::FreeFunctionTestCase::FreeFunctionTestCase5807,201623
+        virtual void invoke(Catch::FreeFunctionTestCase::invoke5809,201691
+        TestFunction m_fun;Catch::FreeFunctionTestCase::m_fun5816,201816
+    inline std::string extractClassName(Catch::extractClassName5819,201852
+    AutoReg::AutoReg(Catch::AutoReg::AutoReg5834,202514
+    AutoReg::~AutoReg(Catch::AutoReg::~AutoReg5840,202776
+    void AutoReg::registerTestCase(Catch::AutoReg::registerTestCase5842,202804
+#define TWOBLUECUBES_CATCH_REPORTER_REGISTRY_HPP_INCLUDED5858,203457
+namespace Catch 5862,203532
+    class ReporterRegistry Catch::ReporterRegistry5864,203551
+        virtual ~ReporterRegistry(Catch::ReporterRegistry::~ReporterRegistry5868,203621
+        virtual IStreamingReporter* create(Catch::ReporterRegistry::create5872,203714
+        void registerReporter(Catch::ReporterRegistry::registerReporter5879,204040
+        FactoryMap const& getFactories(Catch::ReporterRegistry::getFactories5883,204204
+        FactoryMap m_factories;Catch::ReporterRegistry::m_factories5888,204309
+#define TWOBLUECUBES_CATCH_EXCEPTION_TRANSLATOR_REGISTRY_HPP_INCLUDED5893,204410
+namespace Catch 5899,204539
+    class ExceptionTranslatorRegistry Catch::ExceptionTranslatorRegistry5901,204558
+        ~ExceptionTranslatorRegistry(Catch::ExceptionTranslatorRegistry::~ExceptionTranslatorRegistry5903,204648
+        virtual void registerTranslator(Catch::ExceptionTranslatorRegistry::registerTranslator5907,204740
+        virtual std::string translateActiveException(Catch::ExceptionTranslatorRegistry::translateActiveException5911,204886
+        std::string tryTranslators(Catch::ExceptionTranslatorRegistry::tryTranslators5942,205756
+        std::vector<const IExceptionTranslator*> m_translators;Catch::ExceptionTranslatorRegistry::m_translators5955,206136
+namespace Catch 5959,206210
+        class RegistryHub Catch::RegistryHub5963,206246
+            RegistryHub(Catch::RegistryHub::RegistryHub5969,206455
+            virtual IReporterRegistry const& getReporterRegistry(Catch::RegistryHub::getReporterRegistry5971,206497
+            virtual ITestCaseRegistry const& getTestCaseRegistry(Catch::RegistryHub::getTestCaseRegistry5974,206629
+            virtual IExceptionTranslatorRegistry& getExceptionTranslatorRegistry(Catch::RegistryHub::getExceptionTranslatorRegistry5977,206761
+            virtual void registerReporter(Catch::RegistryHub::registerReporter5982,206954
+            virtual void registerTest(Catch::RegistryHub::registerTest5985,207136
+            virtual void registerTranslator(Catch::RegistryHub::registerTranslator5988,207279
+            TestRegistry m_testCaseRegistry;Catch::RegistryHub::m_testCaseRegistry5993,207479
+            ReporterRegistry m_reporterRegistry;Catch::RegistryHub::m_reporterRegistry5994,207524
+            ExceptionTranslatorRegistry m_exceptionTranslatorRegistry;Catch::RegistryHub::m_exceptionTranslatorRegistry5995,207573
+        inline RegistryHub*& getTheRegistryHub(Catch::getTheRegistryHub5999,207692
+    IRegistryHub& getRegistryHub(Catch::getRegistryHub6007,207936
+    IMutableRegistryHub& getMutableRegistryHub(Catch::getMutableRegistryHub6010,208016
+    void cleanUp(Catch::cleanUp6013,208110
+    std::string translateActiveException(Catch::translateActiveException6018,208235
+#define TWOBLUECUBES_CATCH_NOTIMPLEMENTED_EXCEPTION_HPP_INCLUDED6025,208460
+namespace Catch 6029,208546
+    NotImplementedException::NotImplementedException(Catch::NotImplementedException::NotImplementedException6031,208565
+    const char* NotImplementedException::what(Catch::NotImplementedException::what6039,208828
+#define TWOBLUECUBES_CATCH_CONTEXT_IMPL_HPP_INCLUDED6046,209005
+#define TWOBLUECUBES_CATCH_STREAM_HPP_INCLUDED6049,209095
+#define TWOBLUECUBES_CATCH_STREAMBUF_H_INCLUDED6052,209180
+namespace Catch 6056,209251
+    class StreamBufBase Catch::StreamBufBase6058,209270
+namespace Catch 6068,209451
+    template<typename WriterF,Catch::WriterF6070,209470
+    template<typename WriterF, size_t bufferSize=Catch::bufferSize6070,209470
+    struct OutputDebugWriter Catch::OutputDebugWriter6108,210476
+        void operator()(Catch::OutputDebugWriter::operator()6110,210508
+    Stream::Stream(Catch::Stream::Stream6115,210617
+    Stream::Stream(Catch::Stream::Stream6119,210688
+    void Stream::release(Catch::Stream::release6123,210811
+    std::ostream& cout(Catch::cout6132,211057
+    std::ostream& cerr(Catch::cerr6135,211116
+namespace Catch 6141,211185
+    class Context Catch::Context6143,211204
+        Context(Catch::Context::Context6145,211250
+        virtual IResultCapture* getResultCapture(Catch::Context::getResultCapture6150,211435
+        virtual IRunner* getRunner(Catch::Context::getRunner6153,211534
+        virtual size_t getGeneratorIndex(Catch::Context::getGeneratorIndex6156,211612
+        virtual bool advanceGeneratorsForCurrentTest(Catch::Context::advanceGeneratorsForCurrentTest6161,211848
+        virtual Ptr<IConfig const> getConfig(Catch::Context::getConfig6166,212050
+        virtual void setResultCapture(Catch::Context::setResultCapture6171,212176
+        virtual void setRunner(Catch::Context::setRunner6174,212304
+        virtual void setConfig(Catch::Context::setConfig6177,212397
+        IGeneratorsForTest* findGeneratorsForCurrentTest(Catch::Context::findGeneratorsForCurrentTest6184,212582
+        IGeneratorsForTest& getGeneratorsForCurrentTest(Catch::Context::getGeneratorsForCurrentTest6194,212972
+        Ptr<IConfig const> m_config;Catch::Context::m_config6205,213437
+        IRunner* m_runner;Catch::Context::m_runner6206,213474
+        IResultCapture* m_resultCapture;Catch::Context::m_resultCapture6207,213501
+        std::map<Catch::Context::std::map6208,213542
+        std::map<std::string, IGeneratorsForTest*> m_generatorsByTestName;Catch::Context::m_generatorsByTestName6208,213542
+    IMutableContext& getCurrentMutableContext(Catch::getCurrentMutableContext6214,213687
+    IContext& getCurrentContext(Catch::getCurrentContext6219,213849
+    Stream createStream(Catch::createStream6223,213935
+    void cleanUpContext(Catch::cleanUpContext6231,214335
+#define TWOBLUECUBES_CATCH_CONSOLE_COLOUR_IMPL_HPP_INCLUDED6238,214483
+namespace Catch 6240,214544
+        struct IColourImpl Catch::IColourImpl6243,214579
+            virtual ~IColourImpl(Catch::IColourImpl::~IColourImpl6244,214608
+        struct NoColourImpl Catch::NoColourImpl6248,214720
+            void use(Catch::NoColourImpl::use6249,214764
+            static IColourImpl* instance(Catch::NoColourImpl::instance6251,214805
+#       define CATCH_CONFIG_COLOUR_WINDOWS6262,215163
+#       define CATCH_CONFIG_COLOUR_ANSI6264,215215
+#define NOMINMAX6271,215377
+namespace Catch 6280,215473
+    class Win32ColourImpl Catch::Win32ColourImpl6283,215504
+        Win32ColourImpl(Catch::Win32ColourImpl::Win32ColourImpl6285,215565
+        virtual void use(Catch::Win32ColourImpl::use6292,215833
+        void setTextAttribute(Catch::Win32ColourImpl::setTextAttribute6313,217239
+        HANDLE stdoutHandle;Catch::Win32ColourImpl::stdoutHandle6316,217373
+        WORD originalAttributes;Catch::Win32ColourImpl::originalAttributes6317,217402
+    IColourImpl* platformColourInstance(Catch::platformColourInstance6320,217443
+namespace Catch 6332,217718
+    class PosixColourImpl Catch::PosixColourImpl6339,217942
+        virtual void use(Catch::PosixColourImpl::use6341,218003
+        static IColourImpl* instance(Catch::PosixColourImpl::instance6360,219017
+        void setColour(Catch::PosixColourImpl::setColour6366,219161
+    IColourImpl* platformColourInstance(Catch::platformColourInstance6371,219283
+namespace Catch 6383,219688
+    static IColourImpl* platformColourInstance(Catch::platformColourInstance6385,219707
+namespace Catch 6391,219851
+    Colour::Colour(Catch::Colour::Colour6393,219870
+    Colour::Colour(Catch::Colour::Colour6394,219952
+    Colour::~Colour(Catch::Colour::~Colour6395,220064
+    void Colour::use(Catch::Colour::use6397,220118
+#define TWOBLUECUBES_CATCH_GENERATORS_IMPL_HPP_INCLUDED6407,220406
+namespace Catch 6413,220515
+    struct GeneratorInfo Catch::GeneratorInfo6415,220534
+        GeneratorInfo(Catch::GeneratorInfo::GeneratorInfo6417,220579
+        bool moveNext(Catch::GeneratorInfo::moveNext6422,220693
+        std::size_t getCurrentIndex(Catch::GeneratorInfo::getCurrentIndex6430,220882
+        std::size_t m_size;Catch::GeneratorInfo::m_size6434,220974
+        std::size_t m_currentIndex;Catch::GeneratorInfo::m_currentIndex6435,221002
+    class GeneratorsForTest Catch::GeneratorsForTest6440,221127
+        ~GeneratorsForTest(Catch::GeneratorsForTest::~GeneratorsForTest6443,221198
+        IGeneratorInfo& getGeneratorInfo(Catch::GeneratorsForTest::getGeneratorInfo6447,221286
+        bool moveNext(Catch::GeneratorsForTest::moveNext6458,221825
+        std::map<Catch::GeneratorsForTest::std::map6469,222211
+        std::map<std::string, IGeneratorInfo*> m_generatorsByName;Catch::GeneratorsForTest::m_generatorsByName6469,222211
+        std::vector<IGeneratorInfo*> m_generatorsInOrder;Catch::GeneratorsForTest::m_generatorsInOrder6470,222278
+    IGeneratorsForTest* createGeneratorsForTest(Catch::createGeneratorsForTest6473,222344
+#define TWOBLUECUBES_CATCH_ASSERTIONRESULT_HPP_INCLUDED6481,222518
+namespace Catch 6483,222575
+    AssertionInfo::AssertionInfo(Catch::AssertionInfo::AssertionInfo6485,222594
+    AssertionResult::AssertionResult(Catch::AssertionResult::AssertionResult6495,223059
+    AssertionResult::AssertionResult(Catch::AssertionResult::AssertionResult6497,223102
+    AssertionResult::~AssertionResult(Catch::AssertionResult::~AssertionResult6502,223262
+    bool AssertionResult::succeeded(Catch::AssertionResult::succeeded6505,223334
+    bool AssertionResult::isOk(Catch::AssertionResult::isOk6510,223496
+    ResultWas::OfType AssertionResult::getResultType(Catch::AssertionResult::getResultType6514,223652
+    bool AssertionResult::hasExpression(Catch::AssertionResult::hasExpression6518,223762
+    bool AssertionResult::hasMessage(Catch::AssertionResult::hasMessage6522,223870
+    std::string AssertionResult::getExpression(Catch::AssertionResult::getExpression6526,223970
+    std::string AssertionResult::getExpressionInMacro(Catch::AssertionResult::getExpressionInMacro6532,224198
+    bool AssertionResult::hasExpandedExpression(Catch::AssertionResult::hasExpandedExpression6539,224446
+    std::string AssertionResult::getExpandedExpression(Catch::AssertionResult::getExpandedExpression6543,224589
+    std::string AssertionResult::getMessage(Catch::AssertionResult::getMessage6547,224714
+    SourceLineInfo AssertionResult::getSourceInfo(Catch::AssertionResult::getSourceInfo6550,224811
+    std::string AssertionResult::getTestMacroName(Catch::AssertionResult::getTestMacroName6554,224910
+#define TWOBLUECUBES_CATCH_TEST_CASE_INFO_HPP_INCLUDED6561,225080
+namespace Catch 6563,225136
+    inline TestCaseInfo::SpecialProperties parseSpecialTag(Catch::parseSpecialTag6565,225155
+    inline bool isReservedTag(Catch::isReservedTag6579,225680
+    inline void enforceNotReservedTag(Catch::enforceNotReservedTag6582,225845
+    TestCase makeTestCase(Catch::makeTestCase6598,226428
+    TestCaseInfo::TestCaseInfo(Catch::TestCaseInfo::TestCaseInfo6643,227953
+    TestCaseInfo::TestCaseInfo(Catch::TestCaseInfo::TestCaseInfo6665,228882
+    bool TestCaseInfo::isHidden(Catch::TestCaseInfo::isHidden6676,229243
+    bool TestCaseInfo::throws(Catch::TestCaseInfo::throws6679,229338
+    bool TestCaseInfo::okToFail(Catch::TestCaseInfo::okToFail6682,229429
+    bool TestCaseInfo::expectedToFail(Catch::TestCaseInfo::expectedToFail6685,229539
+    TestCase::TestCase(Catch::TestCase::TestCase6689,229646
+    TestCase::TestCase(Catch::TestCase::TestCase6691,229763
+    TestCase TestCase::withName(Catch::TestCase::withName6696,229877
+    void TestCase::swap(Catch::TestCase::swap6702,230041
+    void TestCase::invoke(Catch::TestCase::invoke6714,230516
+    bool TestCase::operator == Catch::TestCase::operator ==6718,230583
+    bool TestCase::operator < Catch::TestCase::operator <6724,230789
+    TestCase& TestCase::operator = Catch::TestCase::operator =6727,230893
+    TestCaseInfo const& TestCase::getTestCaseInfo(Catch::TestCase::getTestCaseInfo6733,231039
+#define TWOBLUECUBES_CATCH_VERSION_HPP_INCLUDED6741,231195
+namespace Catch 6743,231244
+    Version::VersionCatch::Version::Version6745,231263
+    std::ostream& operator << Catch::operator <<6758,231681
+#define TWOBLUECUBES_CATCH_MESSAGE_HPP_INCLUDED6775,232140
+namespace Catch 6777,232189
+    MessageInfo::MessageInfo(Catch::MessageInfo::MessageInfo6779,232208
+    unsigned int MessageInfo::globalCount Catch::MessageInfo::globalCount6789,232585
+    ScopedMessage::ScopedMessage(Catch::ScopedMessage::ScopedMessage6793,232715
+    ScopedMessage::ScopedMessage(Catch::ScopedMessage::ScopedMessage6799,232929
+    ScopedMessage::~ScopedMessage(Catch::ScopedMessage::~ScopedMessage6803,233029
+#define TWOBLUECUBES_CATCH_LEGACY_REPORTER_ADAPTER_HPP_INCLUDED6810,233208
+#define TWOBLUECUBES_CATCH_LEGACY_REPORTER_ADAPTER_H_INCLUDED6813,233324
+namespace Catch6815,233387
+    struct IReporter Catch::IReporter6818,233423
+    class LegacyReporterAdapter Catch::LegacyReporterAdapter6837,234495
+        Ptr<IReporter> m_legacyReporter;Catch::LegacyReporterAdapter::m_legacyReporter6858,235598
+namespace Catch6862,235649
+    LegacyReporterAdapter::LegacyReporterAdapter(Catch::LegacyReporterAdapter::LegacyReporterAdapter6864,235667
+    LegacyReporterAdapter::~LegacyReporterAdapter(Catch::LegacyReporterAdapter::~LegacyReporterAdapter6867,235806
+    ReporterPreferences LegacyReporterAdapter::getPreferences(Catch::LegacyReporterAdapter::getPreferences6869,235862
+    void LegacyReporterAdapter::noMatchingTestCases(Catch::LegacyReporterAdapter::noMatchingTestCases6875,236077
+    void LegacyReporterAdapter::testRunStarting(Catch::LegacyReporterAdapter::testRunStarting6876,236154
+    void LegacyReporterAdapter::testGroupStarting(Catch::LegacyReporterAdapter::testGroupStarting6879,236274
+    void LegacyReporterAdapter::testCaseStarting(Catch::LegacyReporterAdapter::testCaseStarting6882,236418
+    void LegacyReporterAdapter::sectionStarting(Catch::LegacyReporterAdapter::sectionStarting6885,236560
+    void LegacyReporterAdapter::assertionStarting(Catch::LegacyReporterAdapter::assertionStarting6888,236735
+    bool LegacyReporterAdapter::assertionEnded(Catch::LegacyReporterAdapter::assertionEnded6892,236853
+    void LegacyReporterAdapter::sectionEnded(Catch::LegacyReporterAdapter::sectionEnded6909,237733
+    void LegacyReporterAdapter::testCaseEnded(Catch::LegacyReporterAdapter::testCaseEnded6914,238049
+    void LegacyReporterAdapter::testGroupEnded(Catch::LegacyReporterAdapter::testGroupEnded6921,238335
+    void LegacyReporterAdapter::testRunEnded(Catch::LegacyReporterAdapter::testRunEnded6926,238601
+    void LegacyReporterAdapter::skipTest(Catch::LegacyReporterAdapter::skipTest6929,238751
+namespace Catch 6946,239057
+        uint64_t getCurrentTicks(Catch::getCurrentTicks6950,239122
+        uint64_t getCurrentTicks(Catch::getCurrentTicks6961,239568
+    void Timer::start(Catch::Timer::start6969,239791
+    unsigned int Timer::getElapsedMicroseconds(Catch::Timer::getElapsedMicroseconds6972,239860
+    unsigned int Timer::getElapsedMilliseconds(Catch::Timer::getElapsedMilliseconds6975,239994
+    double Timer::getElapsedSeconds(Catch::Timer::getElapsedSeconds6978,240130
+#define TWOBLUECUBES_CATCH_COMMON_HPP_INCLUDED6988,240345
+namespace Catch 6990,240393
+    bool startsWith(Catch::startsWith6992,240412
+    bool endsWith(Catch::endsWith6995,240575
+    bool contains(Catch::contains6998,240757
+    void toLowerInPlace(Catch::toLowerInPlace7001,240886
+    std::string toLower(Catch::toLower7004,241004
+    std::string trim(Catch::trim7009,241137
+    bool replaceInPlace(Catch::replaceInPlace7017,241492
+    pluralise::pluralise(Catch::pluralise::pluralise7031,242047
+    std::ostream& operator << Catch::operator <<7036,242178
+    SourceLineInfo::SourceLineInfo(Catch::SourceLineInfo::SourceLineInfo7043,242410
+    SourceLineInfo::SourceLineInfo(Catch::SourceLineInfo::SourceLineInfo7044,242461
+    SourceLineInfo::SourceLineInfo(Catch::SourceLineInfo::SourceLineInfo7048,242588
+    bool SourceLineInfo::empty(Catch::SourceLineInfo::empty7052,242716
+    bool SourceLineInfo::operator == Catch::SourceLineInfo::operator ==7055,242792
+    bool SourceLineInfo::operator < Catch::SourceLineInfo::operator <7058,242932
+    std::ostream& operator << Catch::operator <<7062,243097
+    void throwLogicError(Catch::throwLogicError7071,243331
+#define TWOBLUECUBES_CATCH_SECTION_HPP_INCLUDED7080,243656
+namespace Catch 7082,243705
+    SectionInfo::SectionInfoCatch::SectionInfo::SectionInfo7084,243724
+    Section::Section(Catch::Section::Section7093,243980
+    Section::~Section(Catch::Section::~Section7100,244177
+    Section::operator bool(Catch::Section::operator bool7106,244408
+#define TWOBLUECUBES_CATCH_DEBUGGER_HPP_INCLUDED7113,244550
+    namespace Catch{Catch7125,244777
+        bool isDebuggerActive(Catch::isDebuggerActive7132,245111
+    namespace Catch 7167,246298
+        bool isDebuggerActive(Catch::isDebuggerActive7168,246320
+    namespace Catch 7174,246514
+        bool isDebuggerActive(Catch::isDebuggerActive7175,246536
+    namespace Catch 7180,246637
+       inline bool isDebuggerActive(Catch::isDebuggerActive7181,246659
+    namespace Catch 7187,246858
+        void writeToDebugConsole(Catch::writeToDebugConsole7188,246880
+    namespace Catch 7193,247014
+        void writeToDebugConsole(Catch::writeToDebugConsole7194,247036
+#define TWOBLUECUBES_CATCH_TOSTRING_HPP_INCLUDED7202,247273
+namespace Catch 7204,247323
+namespace Detail Catch::Detail7206,247342
+        struct Endianness Catch::Detail::Endianness7211,247422
+            enum Arch Catch::Detail::Endianness::Arch7212,247450
+            enum Arch { Big,Catch::Detail::Endianness::Arch::Big7212,247450
+            enum Arch { Big, Little Catch::Detail::Endianness::Arch::Little7212,247450
+            static Arch which(Catch::Detail::Endianness::which7214,247490
+                union _{Catch::Detail::Endianness::_7215,247524
+                    int asInt;Catch::Detail::Endianness::_::asInt7216,247549
+                    char asChar[Catch::Detail::Endianness::_::asChar7217,247580
+    std::string rawMemoryToString(Catch::Detail::rawMemoryToString7226,247782
+std::string toString(7244,248401
+std::string toString(7262,248956
+std::string toString(7271,249210
+std::string toString(7275,249356
+std::string toString(7279,249468
+std::string toString(7284,249613
+std::string toString(7289,249728
+std::string toString(7297,249909
+std::string toString(7305,250100
+std::string fpToString(7310,250236
+std::string toString(7325,250627
+std::string toString(7328,250710
+std::string toString(7332,250798
+std::string toString(7336,250875
+std::string toString(7342,251034
+std::string toString(7346,251132
+std::string toString(7351,251266
+    std::string toString(7357,251355
+    std::string toString(7362,251528
+    std::string toString(7367,251712
+#define TWOBLUECUBES_CATCH_RESULT_BUILDER_HPP_INCLUDED7375,251903
+namespace Catch 7377,251959
+    ResultBuilder::ResultBuilder(Catch::ResultBuilder::ResultBuilder7379,251978
+    ResultBuilder& ResultBuilder::setResultType(Catch::ResultBuilder::setResultType7388,252417
+    ResultBuilder& ResultBuilder::setResultType(Catch::ResultBuilder::setResultType7392,252559
+    ResultBuilder& ResultBuilder::setLhs(Catch::ResultBuilder::setLhs7396,252734
+    ResultBuilder& ResultBuilder::setRhs(Catch::ResultBuilder::setRhs7400,252867
+    ResultBuilder& ResultBuilder::setOp(Catch::ResultBuilder::setOp7404,253000
+    void ResultBuilder::endExpression(Catch::ResultBuilder::endExpression7409,253130
+    void ResultBuilder::useActiveException(Catch::ResultBuilder::useActiveException7414,253295
+    void ResultBuilder::captureResult(Catch::ResultBuilder::captureResult7420,253567
+    void ResultBuilder::captureExpression(Catch::ResultBuilder::captureExpression7425,253712
+    void ResultBuilder::react(Catch::ResultBuilder::react7436,254181
+    bool ResultBuilder::shouldDebugBreak(Catch::ResultBuilder::shouldDebugBreak7441,254299
+    bool ResultBuilder::allowThrows(Catch::ResultBuilder::allowThrows7442,254379
+    AssertionResult ResultBuilder::build(Catch::ResultBuilder::build7444,254483
+    std::string ResultBuilder::reconstructExpression(Catch::ResultBuilder::reconstructExpression7468,255435
+#define TWOBLUECUBES_CATCH_TAG_ALIAS_REGISTRY_HPP_INCLUDED7488,256644
+#define TWOBLUECUBES_CATCH_TAG_ALIAS_REGISTRY_H_INCLUDED7491,256750
+namespace Catch 7495,256824
+    class TagAliasRegistry Catch::TagAliasRegistry7497,256843
+        std::map<Catch::TagAliasRegistry::std::map7506,257253
+        std::map<std::string, TagAlias> m_registry;Catch::TagAliasRegistry::m_registry7506,257253
+namespace Catch 7514,257375
+    TagAliasRegistry::~TagAliasRegistry(Catch::TagAliasRegistry::~TagAliasRegistry7516,257394
+    Option<TagAlias> TagAliasRegistry::find(Catch::TagAliasRegistry::find7518,257440
+    std::string TagAliasRegistry::expandAliases(Catch::TagAliasRegistry::expandAliases7526,257734
+    void TagAliasRegistry::add(Catch::TagAliasRegistry::add7541,258443
+    TagAliasRegistry& TagAliasRegistry::get(Catch::TagAliasRegistry::get7557,259238
+    ITagAliasRegistry::~ITagAliasRegistry(Catch::ITagAliasRegistry::~ITagAliasRegistry7563,259361
+    ITagAliasRegistry const& ITagAliasRegistry::get(Catch::ITagAliasRegistry::get7564,259408
+    RegistrarForTagAliases::RegistrarForTagAliases(Catch::RegistrarForTagAliases::RegistrarForTagAliases7566,259499
+#define TWOBLUECUBES_CATCH_REPORTER_XML_HPP_INCLUDED7580,259968
+#define TWOBLUECUBES_CATCH_REPORTER_BASES_HPP_INCLUDED7583,260066
+namespace Catch 7587,260142
+    struct StreamingReporterBase Catch::StreamingReporterBase7589,260161
+        StreamingReporterBase(Catch::StreamingReporterBase::StreamingReporterBase7591,260230
+        virtual void noMatchingTestCases(Catch::StreamingReporterBase::noMatchingTestCases7598,260433
+        virtual void testRunStarting(Catch::StreamingReporterBase::testRunStarting7600,260500
+        virtual void testGroupStarting(Catch::StreamingReporterBase::testGroupStarting7603,260631
+        virtual void testCaseStarting(Catch::StreamingReporterBase::testCaseStarting7607,260757
+        virtual void sectionStarting(Catch::StreamingReporterBase::sectionStarting7610,260885
+        virtual void sectionEnded(Catch::StreamingReporterBase::sectionEnded7614,261024
+        virtual void testCaseEnded(Catch::StreamingReporterBase::testCaseEnded7617,261152
+        virtual void testGroupEnded(Catch::StreamingReporterBase::testGroupEnded7620,261285
+        virtual void testRunEnded(Catch::StreamingReporterBase::testRunEnded7623,261418
+        virtual void skipTest(Catch::StreamingReporterBase::skipTest7629,261627
+        Ptr<IConfig> m_config;Catch::StreamingReporterBase::m_config7634,261817
+        std::ostream& stream;Catch::StreamingReporterBase::stream7635,261848
+        LazyStat<TestRunInfo> currentTestRunInfo;Catch::StreamingReporterBase::currentTestRunInfo7637,261879
+        LazyStat<GroupInfo> currentGroupInfo;Catch::StreamingReporterBase::currentGroupInfo7638,261929
+        LazyStat<TestCaseInfo> currentTestCaseInfo;Catch::StreamingReporterBase::currentTestCaseInfo7639,261975
+        std::vector<SectionInfo> m_sectionStack;Catch::StreamingReporterBase::m_sectionStack7641,262028
+    struct CumulativeReporterBase Catch::CumulativeReporterBase7644,262085
+        template<typename T,Catch::CumulativeReporterBase::T7645,262154
+        struct Node Catch::CumulativeReporterBase::Node7646,262204
+            explicit Node(Catch::CumulativeReporterBase::Node::Node7647,262241
+            virtual ~Node(Catch::CumulativeReporterBase::Node::~Node7648,262307
+            typedef std::vector<Ptr<ChildNodeT> > ChildNodes;Catch::CumulativeReporterBase::Node::ChildNodes7650,262339
+            T value;Catch::CumulativeReporterBase::Node::value7651,262401
+            ChildNodes children;Catch::CumulativeReporterBase::Node::children7652,262422
+        struct SectionNode Catch::CumulativeReporterBase::SectionNode7654,262466
+            explicit SectionNode(Catch::CumulativeReporterBase::SectionNode::SectionNode7655,262510
+            bool operator == Catch::CumulativeReporterBase::SectionNode::operator ==7658,262631
+            bool operator == Catch::CumulativeReporterBase::SectionNode::operator ==7661,262798
+            SectionStats stats;Catch::CumulativeReporterBase::SectionNode::stats7665,262929
+            typedef std::vector<Ptr<SectionNode> > ChildSections;Catch::CumulativeReporterBase::SectionNode::ChildSections7666,262961
+            typedef std::vector<AssertionStats> Assertions;Catch::CumulativeReporterBase::SectionNode::Assertions7667,263027
+            ChildSections childSections;Catch::CumulativeReporterBase::SectionNode::childSections7668,263087
+            Assertions assertions;Catch::CumulativeReporterBase::SectionNode::assertions7669,263128
+            std::string stdOut;Catch::CumulativeReporterBase::SectionNode::stdOut7670,263163
+            std::string stdErr;Catch::CumulativeReporterBase::SectionNode::stdErr7671,263195
+        struct BySectionInfo Catch::CumulativeReporterBase::BySectionInfo7674,263239
+            BySectionInfo(Catch::CumulativeReporterBase::BySectionInfo::BySectionInfo7675,263270
+			BySectionInfo(Catch::CumulativeReporterBase::BySectionInfo::BySectionInfo7676,263346
+            bool operator() Catch::CumulativeReporterBase::BySectionInfo::operator()7677,263423
+            SectionInfo const& m_other;Catch::CumulativeReporterBase::BySectionInfo::m_other7682,263643
+        typedef Node<TestCaseStats,Catch::CumulativeReporterBase::TestCaseStats7685,263695
+        typedef Node<TestCaseStats, SectionNode> TestCaseNode;Catch::CumulativeReporterBase::TestCaseNode7685,263695
+        typedef Node<TestGroupStats,Catch::CumulativeReporterBase::TestGroupStats7686,263758
+        typedef Node<TestGroupStats, TestCaseNode> TestGroupNode;Catch::CumulativeReporterBase::TestGroupNode7686,263758
+        typedef Node<TestRunStats,Catch::CumulativeReporterBase::TestRunStats7687,263824
+        typedef Node<TestRunStats, TestGroupNode> TestRunNode;Catch::CumulativeReporterBase::TestRunNode7687,263824
+        CumulativeReporterBase(Catch::CumulativeReporterBase::CumulativeReporterBase7689,263888
+        virtual void testRunStarting(Catch::CumulativeReporterBase::testRunStarting7695,264084
+        virtual void testGroupStarting(Catch::CumulativeReporterBase::testGroupStarting7696,264146
+        virtual void testCaseStarting(Catch::CumulativeReporterBase::testCaseStarting7698,264209
+        virtual void sectionStarting(Catch::CumulativeReporterBase::sectionStarting7700,264274
+        virtual void assertionStarting(Catch::CumulativeReporterBase::assertionStarting7725,265385
+        virtual bool assertionEnded(Catch::CumulativeReporterBase::assertionEnded7727,265452
+        virtual void sectionEnded(Catch::CumulativeReporterBase::sectionEnded7733,265739
+        virtual void testCaseEnded(Catch::CumulativeReporterBase::testCaseEnded7739,266002
+        virtual void testGroupEnded(Catch::CumulativeReporterBase::testGroupEnded7750,266505
+        virtual void testRunEnded(Catch::CumulativeReporterBase::testRunEnded7755,266760
+        virtual void skipTest(Catch::CumulativeReporterBase::skipTest7763,267092
+        Ptr<IConfig> m_config;Catch::CumulativeReporterBase::m_config7765,267149
+        std::ostream& stream;Catch::CumulativeReporterBase::stream7766,267180
+        std::vector<AssertionStats> m_assertions;Catch::CumulativeReporterBase::m_assertions7767,267210
+        std::vector<std::vector<Ptr<SectionNode> > > m_sections;Catch::CumulativeReporterBase::m_sections7768,267260
+        std::vector<Ptr<TestCaseNode> > m_testCases;Catch::CumulativeReporterBase::m_testCases7769,267325
+        std::vector<Ptr<TestGroupNode> > m_testGroups;Catch::CumulativeReporterBase::m_testGroups7770,267378
+        std::vector<Ptr<TestRunNode> > m_testRuns;Catch::CumulativeReporterBase::m_testRuns7772,267434
+        Ptr<SectionNode> m_rootSection;Catch::CumulativeReporterBase::m_rootSection7774,267486
+        Ptr<SectionNode> m_deepestSection;Catch::CumulativeReporterBase::m_deepestSection7775,267526
+        std::vector<Ptr<SectionNode> > m_sectionStack;Catch::CumulativeReporterBase::m_sectionStack7776,267569
+    char const* getLineOfChars(Catch::getLineOfChars7781,267654
+#define TWOBLUECUBES_CATCH_REPORTER_REGISTRARS_HPP_INCLUDED7793,268010
+namespace Catch 7795,268071
+    class LegacyReporterRegistrar Catch::LegacyReporterRegistrar7798,268115
+        class ReporterFactory Catch::LegacyReporterRegistrar::ReporterFactory7800,268152
+            virtual IStreamingReporter* create(Catch::LegacyReporterRegistrar::ReporterFactory::create7801,268210
+            virtual std::string getDescription(Catch::LegacyReporterRegistrar::ReporterFactory::getDescription7805,268381
+        LegacyReporterRegistrar(Catch::LegacyReporterRegistrar::LegacyReporterRegistrar7812,268521
+    class ReporterRegistrar Catch::ReporterRegistrar7818,268710
+        class ReporterFactory Catch::ReporterRegistrar::ReporterFactory7820,268741
+            virtual IStreamingReporter* create(Catch::ReporterRegistrar::ReporterFactory::create7833,269760
+            virtual std::string getDescription(Catch::ReporterRegistrar::ReporterFactory::getDescription7837,269902
+        ReporterRegistrar(Catch::ReporterRegistrar::ReporterRegistrar7844,270042
+#define INTERNAL_CATCH_REGISTER_LEGACY_REPORTER(7850,270202
+#define INTERNAL_CATCH_REGISTER_REPORTER(7852,270387
+#define TWOBLUECUBES_CATCH_XMLWRITER_HPP_INCLUDED7856,270611
+namespace Catch 7862,270718
+    class XmlWriter Catch::XmlWriter7864,270737
+        class ScopedElement Catch::XmlWriter::ScopedElement7867,270772
+            ScopedElement(Catch::XmlWriter::ScopedElement::ScopedElement7869,270818
+            ScopedElement(Catch::XmlWriter::ScopedElement::ScopedElement7873,270916
+            ~ScopedElement(Catch::XmlWriter::ScopedElement::~ScopedElement7878,271070
+            ScopedElement& writeText(Catch::XmlWriter::ScopedElement::writeText7883,271191
+            ScopedElement& writeAttribute(Catch::XmlWriter::ScopedElement::writeAttribute7889,271408
+            mutable XmlWriter* m_writer;Catch::XmlWriter::ScopedElement::m_writer7895,271622
+        XmlWriter(Catch::XmlWriter::XmlWriter7898,271675
+        XmlWriter(Catch::XmlWriter::XmlWriter7904,271813
+        ~XmlWriter(Catch::XmlWriter::~XmlWriter7910,271958
+        XmlWriter& startElement(Catch::XmlWriter::startElement7915,272059
+        ScopedElement scopedElement(Catch::XmlWriter::scopedElement7925,272371
+        XmlWriter& endElement(Catch::XmlWriter::endElement7931,272550
+        XmlWriter& writeAttribute(Catch::XmlWriter::writeAttribute7945,272974
+        XmlWriter& writeAttribute(Catch::XmlWriter::writeAttribute7954,273305
+        XmlWriter& writeAttribute(Catch::XmlWriter::writeAttribute7960,273540
+        XmlWriter& writeText(Catch::XmlWriter::writeText7966,273763
+        XmlWriter& writeComment(Catch::XmlWriter::writeComment7978,274173
+        XmlWriter& writeBlankLine(Catch::XmlWriter::writeBlankLine7985,274398
+        void setStream(Catch::XmlWriter::setStream7991,274534
+        std::ostream& stream(Catch::XmlWriter::stream7999,274711
+        void ensureTagClosed(Catch::XmlWriter::ensureTagClosed8003,274781
+        void newlineIfNecessary(Catch::XmlWriter::newlineIfNecessary8010,274943
+        void writeEncodedText(Catch::XmlWriter::writeEncodedText8017,275113
+        bool m_tagIsOpen;Catch::XmlWriter::m_tagIsOpen8041,275984
+        bool m_needsNewline;Catch::XmlWriter::m_needsNewline8042,276010
+        std::vector<std::string> m_tags;Catch::XmlWriter::m_tags8043,276039
+        std::string m_indent;Catch::XmlWriter::m_indent8044,276080
+        std::ostream* m_os;Catch::XmlWriter::m_os8045,276110
+namespace Catch 8049,276148
+    class XmlReporter Catch::XmlReporter8050,276166
+        XmlReporter(Catch::XmlReporter::XmlReporter8052,276233
+        static std::string getDescription(Catch::XmlReporter::getDescription8059,276409
+        virtual ReporterPreferences getPreferences(Catch::XmlReporter::getPreferences8064,276565
+        virtual void noMatchingTestCases(Catch::XmlReporter::noMatchingTestCases8070,276749
+        virtual void testRunStarting(Catch::XmlReporter::testRunStarting8074,276888
+        virtual void testGroupStarting(Catch::XmlReporter::testGroupStarting8082,277225
+        virtual void testCaseStarting(Catch::XmlReporter::testCaseStarting8088,277475
+        virtual void sectionStarting(Catch::XmlReporter::sectionStarting8096,277827
+        virtual void assertionStarting(Catch::XmlReporter::assertionStarting8105,278232
+        virtual bool assertionEnded(Catch::XmlReporter::assertionEnded8107,278300
+        virtual void sectionEnded(Catch::XmlReporter::sectionEnded8178,281754
+        virtual void testCaseEnded(Catch::XmlReporter::testCaseEnded8193,282502
+        virtual void testGroupEnded(Catch::XmlReporter::testGroupEnded8204,283018
+        virtual void testRunEnded(Catch::XmlReporter::testRunEnded8214,283608
+        Timer m_testCaseTimer;Catch::XmlReporter::m_testCaseTimer8224,284123
+        XmlWriter m_xml;Catch::XmlReporter::m_xml8225,284154
+        int m_sectionDepth;Catch::XmlReporter::m_sectionDepth8226,284179
+#define TWOBLUECUBES_CATCH_REPORTER_JUNIT_HPP_INCLUDED8234,284359
+namespace Catch 8238,284436
+    class JunitReporter Catch::JunitReporter8240,284455
+        JunitReporter(Catch::JunitReporter::JunitReporter8242,284525
+        static std::string getDescription(Catch::JunitReporter::getDescription8249,284702
+        virtual void noMatchingTestCases(Catch::JunitReporter::noMatchingTestCases8253,284860
+        virtual ReporterPreferences getPreferences(Catch::JunitReporter::getPreferences8255,284936
+        virtual void testRunStarting(Catch::JunitReporter::testRunStarting8261,285120
+        virtual void testGroupStarting(Catch::JunitReporter::testGroupStarting8266,285310
+        virtual bool assertionEnded(Catch::JunitReporter::assertionEnded8274,285602
+        virtual void testCaseEnded(Catch::JunitReporter::testCaseEnded8280,285902
+        virtual void testGroupEnded(Catch::JunitReporter::testGroupEnded8286,286160
+        virtual void testRunEndedCumulative(Catch::JunitReporter::testRunEndedCumulative8292,286441
+        void writeGroup(Catch::JunitReporter::writeGroup8296,286530
+        void writeTestCase(Catch::JunitReporter::writeTestCase8321,287844
+        void writeSection(Catch::JunitReporter::writeSection8338,288539
+        void writeAssertions(Catch::JunitReporter::writeAssertions8377,290335
+        void writeAssertion(Catch::JunitReporter::writeAssertion8384,290661
+        XmlWriter xml;Catch::JunitReporter::xml8435,292809
+        Timer suiteTimer;Catch::JunitReporter::suiteTimer8436,292832
+        std::ostringstream stdOutForSuite;Catch::JunitReporter::stdOutForSuite8437,292858
+        std::ostringstream stdErrForSuite;Catch::JunitReporter::stdErrForSuite8438,292901
+        unsigned int unexpectedExceptions;Catch::JunitReporter::unexpectedExceptions8439,292944
+#define TWOBLUECUBES_CATCH_REPORTER_CONSOLE_HPP_INCLUDED8447,293144
+namespace Catch 8449,293202
+    struct ConsoleReporter Catch::ConsoleReporter8451,293221
+        ConsoleReporter(Catch::ConsoleReporter::ConsoleReporter8452,293274
+        static std::string getDescription(Catch::ConsoleReporter::getDescription8458,293462
+        virtual ReporterPreferences getPreferences(Catch::ConsoleReporter::getPreferences8461,293584
+        virtual void noMatchingTestCases(Catch::ConsoleReporter::noMatchingTestCases8467,293769
+        virtual void assertionStarting(Catch::ConsoleReporter::assertionStarting8471,293927
+        virtual bool assertionEnded(Catch::ConsoleReporter::assertionEnded8474,294003
+        virtual void sectionStarting(Catch::ConsoleReporter::sectionStarting8494,294724
+        virtual void sectionEnded(Catch::ConsoleReporter::sectionEnded8498,294913
+        virtual void testCaseEnded(Catch::ConsoleReporter::testCaseEnded8520,296000
+        virtual void testGroupEnded(Catch::ConsoleReporter::testGroupEnded8524,296191
+        virtual void testRunEnded(Catch::ConsoleReporter::testRunEnded8533,296638
+        class AssertionPrinter Catch::ConsoleReporter::AssertionPrinter8542,296940
+            AssertionPrinter(Catch::ConsoleReporter::AssertionPrinter::AssertionPrinter8545,297045
+            void print(Catch::ConsoleReporter::AssertionPrinter::print8617,300541
+            void printResultType(Catch::ConsoleReporter::AssertionPrinter::printResultType8633,301046
+            void printOriginalExpression(Catch::ConsoleReporter::AssertionPrinter::printOriginalExpression8639,301266
+            void printReconstructedExpression(Catch::ConsoleReporter::AssertionPrinter::printReconstructedExpression8647,301600
+            void printMessage(Catch::ConsoleReporter::AssertionPrinter::printMessage8654,301978
+            void printSourceInfo(Catch::ConsoleReporter::AssertionPrinter::printSourceInfo8665,302580
+            std::ostream& stream;Catch::ConsoleReporter::AssertionPrinter::stream8670,302752
+            AssertionStats const& stats;Catch::ConsoleReporter::AssertionPrinter::stats8671,302786
+            AssertionResult const& result;Catch::ConsoleReporter::AssertionPrinter::result8672,302827
+            Colour::Code colour;Catch::ConsoleReporter::AssertionPrinter::colour8673,302870
+            std::string passOrFail;Catch::ConsoleReporter::AssertionPrinter::passOrFail8674,302903
+            std::string messageLabel;Catch::ConsoleReporter::AssertionPrinter::messageLabel8675,302939
+            std::string message;Catch::ConsoleReporter::AssertionPrinter::message8676,302977
+            std::vector<MessageInfo> messages;Catch::ConsoleReporter::AssertionPrinter::messages8677,303010
+            bool printInfoMessages;Catch::ConsoleReporter::AssertionPrinter::printInfoMessages8678,303057
+        void lazyPrint(Catch::ConsoleReporter::lazyPrint8681,303105
+        void lazyPrintRunInfo(Catch::ConsoleReporter::lazyPrintRunInfo8693,303442
+        void lazyPrintGroupInfo(Catch::ConsoleReporter::lazyPrintGroupInfo8705,303960
+        void printTestCaseAndSectionHeader(Catch::ConsoleReporter::printTestCaseAndSectionHeader8711,304229
+        void printClosedHeader(Catch::ConsoleReporter::printClosedHeader8735,305145
+        void printOpenHeader(Catch::ConsoleReporter::printOpenHeader8739,305307
+        void printHeaderString(Catch::ConsoleReporter::printHeaderString8749,305661
+        struct SummaryColumn Catch::ConsoleReporter::SummaryColumn8760,306107
+            SummaryColumn(Catch::ConsoleReporter::SummaryColumn::SummaryColumn8762,306139
+            SummaryColumn addRow(Catch::ConsoleReporter::SummaryColumn::addRow8766,306298
+            std::string label;Catch::ConsoleReporter::SummaryColumn::label8780,306861
+            Colour::Code colour;Catch::ConsoleReporter::SummaryColumn::colour8781,306892
+            std::vector<std::string> rows;Catch::ConsoleReporter::SummaryColumn::rows8782,306925
+        void printTotals(Catch::ConsoleReporter::printTotals8786,306981
+        void printSummaryRow(Catch::ConsoleReporter::printSummaryRow8817,308768
+        static std::size_t makeRatio(Catch::ConsoleReporter::makeRatio8836,309618
+        static std::size_t& findMax(Catch::ConsoleReporter::findMax8840,309861
+        void printTotalsDivider(Catch::ConsoleReporter::printTotalsDivider8849,310117
+        void printSummaryDivider(Catch::ConsoleReporter::printSummaryDivider8871,311554
+        bool m_headerPrinted;Catch::ConsoleReporter::m_headerPrinted8876,311668
+#define TWOBLUECUBES_CATCH_REPORTER_COMPACT_HPP_INCLUDED8884,311859
+namespace Catch 8886,311917
+    struct CompactReporter Catch::CompactReporter8888,311936
+        CompactReporter(Catch::CompactReporter::CompactReporter8890,311990
+        static std::string getDescription(Catch::CompactReporter::getDescription8896,312139
+        virtual ReporterPreferences getPreferences(Catch::CompactReporter::getPreferences8900,312275
+        virtual void noMatchingTestCases(Catch::CompactReporter::noMatchingTestCases8906,312460
+        virtual void assertionStarting(Catch::CompactReporter::assertionStarting8910,312618
+        virtual bool assertionEnded(Catch::CompactReporter::assertionEnded8913,312694
+        virtual void testRunEnded(Catch::CompactReporter::testRunEnded8932,313390
+        class AssertionPrinter Catch::CompactReporter::AssertionPrinter8939,313643
+            AssertionPrinter(Catch::CompactReporter::AssertionPrinter::AssertionPrinter8942,313748
+            void print(Catch::CompactReporter::AssertionPrinter::print8951,314137
+            static Colour::Code dimColour(Catch::CompactReporter::AssertionPrinter::dimColour9022,317495
+            static const char* failedString(Catch::CompactReporter::AssertionPrinter::failedString9025,317595
+            static const char* passedString(Catch::CompactReporter::AssertionPrinter::passedString9026,317662
+            static const char* failedString(Catch::CompactReporter::AssertionPrinter::failedString9028,317735
+            static const char* passedString(Catch::CompactReporter::AssertionPrinter::passedString9029,317802
+            void printSourceInfo(Catch::CompactReporter::AssertionPrinter::printSourceInfo9032,317877
+            void printResultType(Catch::CompactReporter::AssertionPrinter::printResultType9037,318048
+            void printIssue(Catch::CompactReporter::AssertionPrinter::printIssue9047,318399
+            void printExpressionWas(Catch::CompactReporter::AssertionPrinter::printExpressionWas9051,318511
+            void printOriginalExpression(Catch::CompactReporter::AssertionPrinter::printOriginalExpression9062,318865
+            void printReconstructedExpression(Catch::CompactReporter::AssertionPrinter::printReconstructedExpression9068,319057
+            void printMessage(Catch::CompactReporter::AssertionPrinter::printMessage9078,319405
+            void printRemainingMessages(Catch::CompactReporter::AssertionPrinter::printRemainingMessages9085,319623
+            std::ostream& stream;Catch::CompactReporter::AssertionPrinter::stream9111,320742
+            AssertionStats const& stats;Catch::CompactReporter::AssertionPrinter::stats9112,320776
+            AssertionResult const& result;Catch::CompactReporter::AssertionPrinter::result9113,320817
+            std::vector<MessageInfo> messages;Catch::CompactReporter::AssertionPrinter::messages9114,320860
+            std::vector<MessageInfo>::const_iterator itMessage;Catch::CompactReporter::AssertionPrinter::itMessage9115,320907
+            bool printInfoMessages;Catch::CompactReporter::AssertionPrinter::printInfoMessages9116,320971
+        std::string bothOrAll(Catch::CompactReporter::bothOrAll9126,321377
+        void printTotals(Catch::CompactReporter::printTotals9130,321516
+namespace Catch 9171,323482
+    NonCopyable::~NonCopyable(Catch::NonCopyable::~NonCopyable9172,323500
+    IShared::~IShared(Catch::IShared::~IShared9173,323535
+    StreamBufBase::~StreamBufBase(Catch::StreamBufBase::~StreamBufBase9174,323562
+    IContext::~IContext(Catch::IContext::~IContext9175,323616
+    IResultCapture::~IResultCapture(Catch::IResultCapture::~IResultCapture9176,323645
+    ITestCase::~ITestCase(Catch::ITestCase::~ITestCase9177,323686
+    ITestCaseRegistry::~ITestCaseRegistry(Catch::ITestCaseRegistry::~ITestCaseRegistry9178,323717
+    IRegistryHub::~IRegistryHub(Catch::IRegistryHub::~IRegistryHub9179,323764
+    IMutableRegistryHub::~IMutableRegistryHub(Catch::IMutableRegistryHub::~IMutableRegistryHub9180,323801
+    IExceptionTranslator::~IExceptionTranslator(Catch::IExceptionTranslator::~IExceptionTranslator9181,323852
+    IExceptionTranslatorRegistry::~IExceptionTranslatorRegistry(Catch::IExceptionTranslatorRegistry::~IExceptionTranslatorRegistry9182,323905
+    IReporter::~IReporter(Catch::IReporter::~IReporter9183,323974
+    IReporterFactory::~IReporterFactory(Catch::IReporterFactory::~IReporterFactory9184,324005
+    IReporterRegistry::~IReporterRegistry(Catch::IReporterRegistry::~IReporterRegistry9185,324050
+    IStreamingReporter::~IStreamingReporter(Catch::IStreamingReporter::~IStreamingReporter9186,324097
+    AssertionStats::~AssertionStats(Catch::AssertionStats::~AssertionStats9187,324146
+    SectionStats::~SectionStats(Catch::SectionStats::~SectionStats9188,324187
+    TestCaseStats::~TestCaseStats(Catch::TestCaseStats::~TestCaseStats9189,324224
+    TestGroupStats::~TestGroupStats(Catch::TestGroupStats::~TestGroupStats9190,324263
+    TestRunStats::~TestRunStats(Catch::TestRunStats::~TestRunStats9191,324304
+    CumulativeReporterBase::SectionNode::~SectionNode(Catch::CumulativeReporterBase::SectionNode::~SectionNode9192,324341
+    CumulativeReporterBase::~CumulativeReporterBase(Catch::CumulativeReporterBase::~CumulativeReporterBase9193,324400
+    StreamingReporterBase::~StreamingReporterBase(Catch::StreamingReporterBase::~StreamingReporterBase9195,324458
+    ConsoleReporter::~ConsoleReporter(Catch::ConsoleReporter::~ConsoleReporter9196,324513
+    CompactReporter::~CompactReporter(Catch::CompactReporter::~CompactReporter9197,324556
+    IRunner::~IRunner(Catch::IRunner::~IRunner9198,324599
+    IMutableContext::~IMutableContext(Catch::IMutableContext::~IMutableContext9199,324626
+    IConfig::~IConfig(Catch::IConfig::~IConfig9200,324669
+    XmlReporter::~XmlReporter(Catch::XmlReporter::~XmlReporter9201,324696
+    JunitReporter::~JunitReporter(Catch::JunitReporter::~JunitReporter9202,324731
+    TestRegistry::~TestRegistry(Catch::TestRegistry::~TestRegistry9203,324770
+    FreeFunctionTestCase::~FreeFunctionTestCase(Catch::FreeFunctionTestCase::~FreeFunctionTestCase9204,324807
+    IGeneratorInfo::~IGeneratorInfo(Catch::IGeneratorInfo::~IGeneratorInfo9205,324860
+    IGeneratorsForTest::~IGeneratorsForTest(Catch::IGeneratorsForTest::~IGeneratorsForTest9206,324901
+    TestSpec::Pattern::~Pattern(Catch::TestSpec::Pattern::~Pattern9207,324950
+    TestSpec::NamePattern::~NamePattern(Catch::TestSpec::NamePattern::~NamePattern9208,324987
+    TestSpec::TagPattern::~TagPattern(Catch::TestSpec::TagPattern::~TagPattern9209,325032
+    TestSpec::ExcludedPattern::~ExcludedPattern(Catch::TestSpec::ExcludedPattern::~ExcludedPattern9210,325075
+    Matchers::Impl::StdString::Equals::~Equals(Catch::Matchers::Impl::StdString::Equals::~Equals9212,325129
+    Matchers::Impl::StdString::Contains::~Contains(Catch::Matchers::Impl::StdString::Contains::~Contains9213,325181
+    Matchers::Impl::StdString::StartsWith::~StartsWith(Catch::Matchers::Impl::StdString::StartsWith::~StartsWith9214,325237
+    Matchers::Impl::StdString::EndsWith::~EndsWith(Catch::Matchers::Impl::StdString::EndsWith::~EndsWith9215,325297
+    void Config::dummy(Catch::Config::dummy9217,325354
+#define TWOBLUECUBES_CATCH_DEFAULT_MAIN_HPP_INCLUDED9228,325523
+int main 9233,325630
+int main 9240,325769
+#  undef CLARA_CONFIG_MAIN9260,326146
+#define CATCH_REQUIRE(9268,326308
+#define CATCH_REQUIRE_FALSE(9269,326417
+#define CATCH_REQUIRE_THROWS(9271,326577
+#define CATCH_REQUIRE_THROWS_AS(9272,326702
+#define CATCH_REQUIRE_NOTHROW(9273,326866
+#define CATCH_CHECK(9275,326996
+#define CATCH_CHECK_FALSE(9276,327112
+#define CATCH_CHECKED_IF(9277,327278
+#define CATCH_CHECKED_ELSE(9278,327402
+#define CATCH_CHECK_NOFAIL(9279,327532
+#define CATCH_CHECK_THROWS(9281,327704
+#define CATCH_CHECK_THROWS_AS(9282,327837
+#define CATCH_CHECK_NOTHROW(9283,328008
+#define CHECK_THAT(9285,328145
+#define CATCH_REQUIRE_THAT(9286,328281
+#define CATCH_INFO(9288,328417
+#define CATCH_WARN(9289,328484
+#define CATCH_SCOPED_INFO(9290,328622
+#define CATCH_CAPTURE(9291,328696
+#define CATCH_SCOPED_CAPTURE(9292,328784
+    #define CATCH_TEST_CASE(9295,328916
+    #define CATCH_TEST_CASE_METHOD(9296,328990
+    #define CATCH_METHOD_AS_TEST_CASE(9297,329101
+    #define CATCH_SECTION(9298,329212
+    #define CATCH_FAIL(9299,329283
+    #define CATCH_SUCCEED(9300,329430
+    #define CATCH_TEST_CASE(9302,329587
+    #define CATCH_TEST_CASE_METHOD(9303,329681
+    #define CATCH_METHOD_AS_TEST_CASE(9304,329812
+    #define CATCH_SECTION(9305,329943
+    #define CATCH_FAIL(9306,330034
+    #define CATCH_SUCCEED(9307,330173
+#define CATCH_ANON_TEST_CASE(9309,330323
+#define CATCH_REGISTER_REPORTER(9311,330389
+#define CATCH_REGISTER_LEGACY_REPORTER(9312,330498
+#define CATCH_GENERATE(9314,330622
+#define CATCH_SCENARIO(9318,330757
+#define CATCH_SCENARIO_METHOD(9319,330831
+#define CATCH_SCENARIO(9321,330956
+#define CATCH_SCENARIO_METHOD(9322,331036
+#define CATCH_GIVEN(9324,331168
+#define CATCH_WHEN(9325,331235
+#define CATCH_AND_WHEN(9326,331302
+#define CATCH_THEN(9327,331369
+#define CATCH_AND_THEN(9328,331436
+#define REQUIRE(9333,331595
+#define REQUIRE_FALSE(9334,331692
+#define REQUIRE_THROWS(9336,331840
+#define REQUIRE_THROWS_AS(9337,331953
+#define REQUIRE_NOTHROW(9338,332105
+#define CHECK(9340,332223
+#define CHECK_FALSE(9341,332327
+#define CHECKED_IF(9342,332481
+#define CHECKED_ELSE(9343,332593
+#define CHECK_NOFAIL(9344,332711
+#define CHECK_THROWS(9346,332871
+#define CHECK_THROWS_AS(9347,332992
+#define CHECK_NOTHROW(9348,333151
+#define CHECK_THAT(9350,333276
+#define REQUIRE_THAT(9351,333406
+#define INFO(9353,333530
+#define WARN(9354,333585
+#define SCOPED_INFO(9355,333711
+#define CAPTURE(9356,333773
+#define SCOPED_CAPTURE(9357,333849
+    #define TEST_CASE(9360,333969
+    #define TEST_CASE_METHOD(9361,334037
+    #define METHOD_AS_TEST_CASE(9362,334142
+    #define SECTION(9363,334247
+    #define FAIL(9364,334312
+    #define SUCCEED(9365,334447
+    #define TEST_CASE(9367,334592
+    #define TEST_CASE_METHOD(9368,334680
+    #define METHOD_AS_TEST_CASE(9369,334805
+    #define SECTION(9370,334930
+    #define FAIL(9371,335015
+    #define SUCCEED(9372,335142
+#define ANON_TEST_CASE(9374,335280
+#define REGISTER_REPORTER(9376,335340
+#define REGISTER_LEGACY_REPORTER(9377,335443
+#define GENERATE(9379,335561
+#define CATCH_TRANSLATE_EXCEPTION(9383,335626
+#define SCENARIO(9387,335794
+#define SCENARIO_METHOD(9388,335856
+#define SCENARIO(9390,335975
+#define SCENARIO_METHOD(9391,336043
+#define GIVEN(9393,336169
+#define WHEN(9394,336227
+#define AND_WHEN(9395,336285
+#define THEN(9396,336343
+#define AND_THEN(9397,336401
+using Catch::Detail::Approx;9399,336460
+#define TWOBLUECUBES_CATCH_REENABLE_WARNINGS_H_INCLUDED9403,336545
+
+spec/room_mob_interaction_spec.cpp,155
+using RoomMove::Mob;7,113
+using RoomMove::Room;8,134
+using RoomMove::Exit;9,156
+using std::cout;10,178
+using std::make_shared;11,195
+SCENARIO(13,220
+
+spec/room_mob_interaction_spec.cpp~,96
+using RoomMove::Mob;7,113
+using RoomMove::Room;8,134
+using std::cout;9,156
+TEST_CASE(11,174
+
+spec/spec.cpp,30
+#define CATCH_CONFIG_MAIN1,0
+
+src/exit.hpp,774
+#define EXIT_HPP_2,18
+namespace RoomMove 6,58
+struct ExitHash RoomMove::ExitHash8,119
+	std::size_t operator()(RoomMove::ExitHash::operator()10,160
+enum class Exit 17,283
+	NORTH,Exit::NORTH18,301
+	NORTH, SOUTH,Exit::SOUTH18,301
+	NORTH, SOUTH, EAST,Exit::EAST18,301
+	NORTH, SOUTH, EAST, WEST,Exit::WEST18,301
+	NORTH, SOUTH, EAST, WEST, UP,Exit::UP18,301
+	NORTH, SOUTH, EAST, WEST, UP, DOWN,Exit::DOWN18,301
+	NORTH, SOUTH, EAST, WEST, UP, DOWN, NORTHWEST,Exit::NORTHWEST18,301
+	NORTH, SOUTH, EAST, WEST, UP, DOWN, NORTHWEST, NORTHEAST,Exit::NORTHEAST18,301
+	NORTH, SOUTH, EAST, WEST, UP, DOWN, NORTHWEST, NORTHEAST, SOUTHWEST,Exit::SOUTHWEST18,301
+	NORTH, SOUTH, EAST, WEST, UP, DOWN, NORTHWEST, NORTHEAST, SOUTHWEST, SOUTHEAST,Exit::SOUTHEAST18,301
+
+src/exit.hpp~,76
+struct ExitHash3,61
+    std::size_t operator()(ExitHash::operator()6,105
+
+src/invalid_key.hpp,95
+#define INVALID_KEY_HPP_2,25
+class InvalidKey 6,73
+	InvalidKey(InvalidKey::InvalidKey8,121
+
+src/invalid_key.hpp~,30
+#define INVALID_KEY_HPP_2,25
+
+src/main.cpp,93
+using RoomMove::Mob;6,78
+using RoomMove::Room;7,99
+using std::cout;8,121
+int main(10,139
+
+src/main.cpp~,96
+using ClassTest::Mob;6,78
+using ClassTest::Room;7,100
+using std::cout;8,123
+int main(10,141
+
+src/mob.cpp,136
+RoomMove::Mob& RoomMove::Mob::say(9,144
+RoomMove::Mob& RoomMove::Mob::move_room(14,266
+RoomMove::Mob& RoomMove::Mob::set_room(31,821
+
+src/mob.cpp~,31
+void ClassTest::Mob::say(4,40
+
+src/mob.hpp,259
+#define MOB_HPP_2,17
+namespace RoomMove 7,93
+class Mob RoomMove::Mob11,163
+	std::string name;RoomMove::Mob::name12,175
+	std::string title;RoomMove::Mob::title13,194
+	std::weak_ptr<Room> room;RoomMove::Mob::room16,290
+	Mob(RoomMove::Mob::Mob19,326
+
+src/mob.hpp~,97
+#define MOB_HPP_2,17
+	class Mob 6,77
+		std::string name;Mob::name7,90
+		Mob(Mob::Mob10,120
+
+src/reverse_exit.cpp,34
+RoomMove::Exit reverse_exit(4,45
+
+src/room.cpp,321
+RoomMove::Room& RoomMove::Room::add_mob(8,120
+RoomMove::Room& RoomMove::Room::remove_mob(14,235
+RoomMove::MobVec::size_type RoomMove::Room::num_mobs(24,584
+RoomMove::ExitMap::const_iterator RoomMove::Room::find(28,670
+RoomMove::ExitMap::const_iterator RoomMove::Room::end(33,780
+void RoomMove::Room::connect(38,868
+
+src/room.cpp~,150
+void ClassTest::Room::add_mob(6,80
+void ClassTest::Room::remove_mob(11,170
+std::vector<ClassTest::Mob>::size_type ClassTest::Room::num_mobs(20,494
+
+src/room.hpp,413
+#define ROOM_HPP_2,18
+namespace RoomMove 11,158
+using MobVec RoomMove::MobVec13,259
+using ExitMap RoomMove::ExitMap14,309
+class Room RoomMove::Room16,383
+	MobVec mobs;RoomMove::Room::mobs17,396
+	std::string name;RoomMove::Room::name18,410
+	std::string desc;RoomMove::Room::desc19,429
+	ExitMap exits;RoomMove::Room::exits20,448
+	Room(RoomMove::Room::Room24,482
+	Room(RoomMove::Room::Room25,522
+
+src/room.hpp~,231
+#define ROOM_HPP_2,18
+	class Room 10,135
+		std::vector<std::shared_ptr<Mob>> mobs;Room::mobs12,231
+		std::string name;Room::name13,273
+		std::string desc;Room::desc14,293
+		Room(Room::Room18,333
+		Room(Room::Room19,374
+
+src/room_move.cpp,15
+int main(3,21
+
+src/room_move.cpp~,15
+int main(3,21
+
+src/reverse_exit.cpp~,0

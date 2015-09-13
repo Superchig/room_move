@@ -18,8 +18,9 @@ class Mob {
 public:
 	Mob(std::string name) : name(name) {};
 
-	void say(std::string message) const;
-	void move_room(Exit exit);
+	Mob& say(std::string message);
+	Mob& move_room(Exit exit);
+	Mob& set_room(std::weak_ptr<Room> new_room);
 };
 }
 #endif // MOB_HPP_

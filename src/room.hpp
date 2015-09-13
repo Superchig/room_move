@@ -8,13 +8,10 @@
 #include "mob.hpp"
 #include "exit.hpp"
 
-void hello() {
-	std::cout << "Hello, world!" << '\n';
-}
-
 namespace RoomMove {
-// Mobs are stored as shared_ptrs because unique_ptrs makes removal impossible.
-using MobVec = std::vector<std::shared_ptr<Mob>>;
+// MobPtr exists so I can change to shared_ptr, if desired.
+using MobPtr = Mob*;
+using MobVec = std::vector<MobPtr>;
 using ExitMap = std::unordered_map<Exit, std::weak_ptr<Room>, ExitHash>;
 
 class Room {
@@ -28,13 +25,17 @@ public:
 	Room(std::string name) : name(name) {}
 	Room(std::string name, std::string desc) : name(name), desc(desc) {}
 
-	void add_mob(const std::shared_ptr<Mob>& mob);
-	void remove_mob(const std::shared_ptr<Mob>& mob);
-	std::vector<std::shared_ptr<Mob>>::size_type num_mobs() const;
+	Room& add_mob(const MobPtr mob);
+	Room& remove_mob(const MobPtr mob);
+	MobVec::size_type num_mobs() const;
 	// Basic movement and picking things up.
 	void parse(const std::string& command);
 	ExitMap::const_iterator find(const Exit& exit) const;
 	ExitMap::const_iterator end() const;
+	std::weak_ptr<Room> exit(Exit exit);
+	static void connect(std::shared_ptr<Room>& room,
+				   std::shared_ptr<Room>& other,
+				   const Exit& exit);
 };
 }
 
